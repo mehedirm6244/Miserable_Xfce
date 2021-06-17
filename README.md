@@ -25,3 +25,5 @@ Icon theme: Fluent-dark
 I recommend you to use this package for enabling this wm theme in CSD applications also: https://github.com/PCMan/gtk3-nocsd
 
 And remember, this theme is for keyboard-driven workflows, which means there's no taskbar buttons. Make sure to bind shortcuts to each commands
+
+I'm sorry for uploading .zip files, I had lack of time... so....
