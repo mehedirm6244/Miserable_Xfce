@@ -6,6 +6,8 @@ This GTK theme is a fork of https://github.com/vinceliuice/Matcha-gtk-theme and 
 
 Nothing, another GTK theme which is modified for Xfce. Um, yes, there's no window buttons (i.e. minimize, close) and application title in the wm theme, because I use a keyboard-driven workflow
 
+Bonus: There's a conky config for four different things also
+
 # Screenshot
 
 ![](https://github.com/cakemeow/blu-xfce-theme/blob/main/screenshot.png)
