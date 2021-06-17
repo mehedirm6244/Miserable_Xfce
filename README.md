@@ -10,4 +10,4 @@ Nothing, another GTK theme which is modified for Xfce. Um, yes, there's no taskb
 # Screenshot?
 
 Yes
-!(https://github.com/cakemeow/blu-xfce-theme/blob/main/screenshot.png)
+![](https://github.com/cakemeow/blu-xfce-theme/blob/main/screenshot.png)
