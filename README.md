@@ -1,2 +1,12 @@
 # blu-xfce-theme
-So, I'm somewhat a ricer and I thought, why not patch a theme for myself? Why not? That's why I've made this fork of Matcha-dark-azul GTK theme + This https://github.com/addy-dclxvi/xfwm4-theme-collections/tree/master/2bxfwm-Lucy/xfwm4 xfwm theme, but with a slightly darker color. This is for my personal use, but feel free to give me suggestions :D
+
+Let me state this thing at first:
+The GTK theme is a fork of https://github.com/vinceliuice/Matcha-gtk-theme and the Xfwm theme is a fork of https://github.com/addy-dclxvi/xfwm4-theme-collections/tree/master/2bxfwm-Lucy/xfwm4 . I thank them for doing such wonderful works
+
+# What is this thing?
+
+Nothing, another GTK theme which is modified for Xfce. Um, yes, there's no taskbar buttons in the wm theme, because I use keyboard-driven workflow
+
+# Screenshot?
+
+Yes. I'll add them shortly
