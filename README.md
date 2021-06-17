@@ -11,3 +11,17 @@ Nothing, another GTK theme which is modified for Xfce. Um, yes, there's no taskb
 
 Yes
 ![](https://github.com/cakemeow/blu-xfce-theme/blob/main/screenshot.png)
+
+# Description:
+
+Xfce version: 4.16
+
+Wallpaper: From Windows 11
+
+Widget: Conky
+
+Icon theme: Fluent-dark
+
+I recommend you to use this package for enabling this wm theme in CSD applications also: https://github.com/PCMan/gtk3-nocsd
+
+And remember, this theme is for keyboard-driven workflows, which means there's no taskbar buttons. Make sure to bind shortcuts to each commands
