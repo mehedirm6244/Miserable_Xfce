@@ -1,0 +1,65 @@
+.xfce4-panel { font-size: 14px; }
+
+.xfce4-panel button { padding: 8px; transition: 0.2s; box-shadow: none; background-image: none; margin: 2px; border-radius: 2px; }
+.xfce4-panel.background .tasklist button { font-size: 12px; }
+.xfce4-panel.background button:active, 
+.xfce4-panel.background button:hover, 
+.xfce4-panel.background button:active:hover, 
+.xfce4-panel.background .tasklist button:active,
+.xfce4-panel.background .tasklist button:hover, 
+.xfce4-panel.background .tasklist button:active:hover { background-color: rgba(255,255,255,0.05); }
+.xfce4-panel button:checked { background-color: rgba(255,255,255,0.07); }
+
+.tasklist { -XfceTasklist-max-button-length: 160; }
+
+#whiskermenu-window { color: rgba(255,255,255,0.8); }
+#whiskermenu-window>frame>stack>box>box * {
+	margin: 0px;
+	padding: 3px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+window#whiskermenu-window>frame>border { border: 5px solid transparent; }
+
+window#whiskermenu-window scrolledwindow { margin: 5px;  }
+#whiskermenu-window button { font-size: 14px; }
+
+#whiskermenu-window treeview { padding: 7px 0px 7px 10px; }
+#whiskermenu-window treeview:hover { background-color: rgba(255,255,255,0.1); }
+#whiskermenu-window iconview { font-size: 12px; padding: 5px 0; }
+#whiskermenu-window iconview:hover { background-color: rgba(255,255,255,0.1); }
+
+* {
+	-ThunarAbstractIconView-row-spacing: 10;
+	-ThunarAbstractIconView-column-spacing: 20;
+}
+.thunar .standard-view .view { padding: 5px 14px; }
+.thunar .sidebar .view { padding: 4px 5px 4px 0px; }
+.thunar .sidebar .view:hover { background-color: rgba(255,255,255,0.05); }
+.thunar .sidebar .view:selected {
+	background-color: rgba(255,255,255,0.07);
+	border-left: 2px solid #81A1C1;
+	color: white;
+}
+
+* {
+	-XfdesktopIconView-ellipsize-icon-labels: 10;
+	-XfdesktopIconView-cell-spacing: 5;
+	-XfdesktopIconView-cell-padding: 5;
+}
+
+
+VteTerminal, vte-terminal { padding: 15px; }
+
+.xfsm-logout-dialog { border: 2px solid #1B1D24; }
+.xfsm-logout-dialog * { margin: 3px; }
+
+#XfceNotifyWindow progressbar { border-radius: 5px; }
+#XfceNotifyWindow progressbar progress { min-height: 4px; }
+#XfceNotifyWindow progressbar trough { min-height: 4px; }
+#XfceNotifyWindow image { -gtk-icon-transform: scale(0.8); }
+
+menu menuitem, .menu menuitem, .context-menu menuitem { padding: 6px 16px; }
+menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover { background-color: rgba(255,255,255,0.1); color: white; }
+
+#xfwm-tabwin { border-radius: 5px; }
