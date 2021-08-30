@@ -1,3 +1,4 @@
+![](https://github.com/mebesus/My_XFCE_dotties/blob/main/images/banner.png)
 # DOTFILES OF MY XFCE SETUP
 
 The GTK theme as well as the kvantume theme used here are a fork of https://github.com/vinceliuice/Matcha-gtk-theme. I thank Vinceliuice for creating such wonderful themes. Um, yes, there's no window buttons (i.e. minimize, close) and application title in the wm theme, because I use a keyboard-driven workflow
