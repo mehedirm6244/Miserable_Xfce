@@ -33,8 +33,9 @@ Font family | Cantarell
 
 ## Installation
 Copy everything of ``.config`` to ``~/.config/`` or ``$HOME/.config/`` of your computer. For using the themes, extract them (sorry for using .zip) inside ``~/.themes/``. If there's no such folder, make one. Xfce-appearance should automatically identify this GTK theme as below: 
-<p align="center"><img src="https://user-images.githubusercontent.com/86041547/131626281-affa4d36-afb4-4c5e-b4e2-3f8277a74d61.png" width="75%"></p>
-You need kvantum manager for activating the kvantum theme. Assuming you have kvantum manager installed and configured already, open kvantum-manager, choose <b>Install/Update Theme</b>. Then click "Select a Kvantum theme folder". A file selector popup window will appear. Select this kvantum folder ``~/.themes/darknord-kvantum/`` and hit "Install this theme". Then choose darknord-kvantum as your kvantum theme and you're all set.<br>
+<p align="center"><img src="https://github.com/mebesus/My_XFCE_dotties/blob/main/images/xfce-appearance.png" width="75%" /></p>
+
+You need kvantum manager for activating the kvantum theme. Assuming you have kvantum manager installed and configured already, open kvantum-manager, choose **Install/Update Theme**. Then click "Select a Kvantum theme folder". A file selector popup window will appear. Select this kvantum folder ``~/.themes/darknord-kvantum/`` and hit "Install this theme". Then choose darknord-kvantum as your kvantum theme and you're all set.<br>
 Oh, one thing. Following the process above, the GTK and the kvantum theme will be installed locally. Which means that if you run any application as root or any other user, it will most likely use the default GTK / kvantum theme. You may install these themes globally (i.e. inside ``/usr/share/themes`` and ``/usr/share/kvantum``) for preventing such issues.
 
 ## Issues?
