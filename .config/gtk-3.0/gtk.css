@@ -1,18 +1,32 @@
 .xfce4-panel { font-size: 14px; }
-
-.xfce4-panel button { padding: 8px; transition: 0.2s; box-shadow: none; background-image: none; margin: 2px; border-radius: 2px; }
-.xfce4-panel.background .tasklist button { font-size: 12px; }
+.xfce4-panel button
+{
+	padding: 9px;
+	transition: 0.2s;
+	box-shadow: none;
+	background-image: none;
+	margin: 2px 2px 3px 2px;
+	border-radius: 1px;
+}
+.xfce4-panel.background .tasklist button, .xfce4-panel menu { font-size: 12px; }
 .xfce4-panel.background button:active, 
 .xfce4-panel.background button:hover, 
 .xfce4-panel.background button:active:hover, 
 .xfce4-panel.background .tasklist button:active,
 .xfce4-panel.background .tasklist button:hover, 
-.xfce4-panel.background .tasklist button:active:hover { background-color: rgba(255,255,255,0.05); }
-.xfce4-panel button:checked { background-color: rgba(255,255,255,0.07); }
+.xfce4-panel.background .tasklist button:active:hover { background-color: rgba(255,255,255,0.03); }
+.xfce4-panel button:checked
+{
+	background-color: rgba(255,255,255,0.05);
+	box-shadow: inset 0px 2px #597999;
+}
 
 .tasklist { -XfceTasklist-max-button-length: 160; }
+#systray-6 .horizontal { background-color: rgba(255,255,255,0.05); }
 
-#whiskermenu-window { color: rgba(255,255,255,0.8); }
+
+#whiskermenu-window { color: rgba(255,255,255,0.75); }
+#whiskermenu-window entry { }
 #whiskermenu-window>frame>stack>box>box * {
 	margin: 0px;
 	padding: 3px;
@@ -21,33 +35,30 @@
 }
 window#whiskermenu-window>frame>border { border: 5px solid transparent; }
 
-window#whiskermenu-window scrolledwindow { margin: 5px;  }
+window#whiskermenu-window scrolledwindow { margin: 2px;  }
 #whiskermenu-window button { font-size: 14px; }
 
 #whiskermenu-window treeview { padding: 7px 0px 7px 10px; }
 #whiskermenu-window treeview:hover { background-color: rgba(255,255,255,0.1); }
-#whiskermenu-window iconview { font-size: 12px; padding: 5px 0; }
+#whiskermenu-window iconview { font-size: 12px; padding: 5px 0; /*background-color: #22252C;*/ }
 #whiskermenu-window iconview:hover { background-color: rgba(255,255,255,0.1); }
 
-* {
+*
+{
 	-ThunarAbstractIconView-row-spacing: 10;
 	-ThunarAbstractIconView-column-spacing: 20;
 }
+
 .thunar .standard-view .view { padding: 5px 14px; }
-.thunar .sidebar .view { padding: 4px 5px 4px 0px; }
+.thunar .standard-view .view:selected {  }
+.thunar .sidebar { background-image: none; }
+.thunar .sidebar .view { padding: 3px 4px 3px 0; }
 .thunar .sidebar .view:hover { background-color: rgba(255,255,255,0.05); }
-.thunar .sidebar .view:selected {
-	background-color: rgba(255,255,255,0.07);
-	border-left: 2px solid #81A1C1;
-	color: white;
+.thunar .sidebar .view:selected
+{
+	background-color: rgb(30, 32, 37);
+	border-left: 2px solid #597999;
 }
-
-* {
-	-XfdesktopIconView-ellipsize-icon-labels: 10;
-	-XfdesktopIconView-cell-spacing: 5;
-	-XfdesktopIconView-cell-padding: 5;
-}
-
 
 VteTerminal, vte-terminal { padding: 15px; }
 

@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>Start Page</title>
+
+	<!-- Link to the main stylesheet -->
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- The dark variant of the page -->
+	<link rel="stylesheet" href="dark.css" />
+
+	<!-- Poppins font -->
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+	<!-- Awesome Icons stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<noscript>This thing is dead without JavaScript</noscript>
+
+	<div id="selector">
+
+		<!-- The city whose weather is currently being shown -->
+		<!-- If you're running this page for the first time, you'll be prompted to provide the name of your preferred city. This input will be saved in the local storage of your browser. If you want to change it, simply click on the city name (on the upper-right corner), and the prompt will re-appear -->
+		<span id="city" onclick="refreshWeather(1)"></span>
+
+		Search Engine: 
+		<!-- Select your preferred search engine -->
+		<select id="engine">
+			<option value="https://duckduckgo.com/">DuckDuckGo</option>
+			<option value="https://google.com/search?q=">Google</option>
+			<option value="https://bing.com/search?q=">Bing</option>
+		</select>
+
+	</div>
+
+
+	<!-- The main body starts from here -->
+	<div id="container">
+
+		<!-- The date-->
+		<div><span id="date"></span></div>
+
+		<div style="margin-top: 5px">
+			<!-- The time -->
+			<span id="time"></span>
+			<!-- The temperature -->
+			<span id="temperature"></span>
+			<!-- The weather condition -->
+			<span id="weather-condition"></span>
+		</div>
+
+		<!-- Extra 40px height -->
+		<div style="height: 40px"></div>
+
+		<!-- The search bar -->
+		<input id="searchbar" placeholder="Search..." autocomplete="off">
+
+		<!-- Extra 40px height -->
+		<div style="height: 40px"></div>
+
+		<!-- Some quick links. Change them as you like -->
+
+		<!-- The div which contains all the links -->
+		<div id="button-container">
+
+			<!--
+				SYNTAX
+				<button>
+					<a href="link-to-website">
+						<i class="fa fa-name"></i> <-- This is the icon. I'm using AwesomeIcons for this 
+					</a>
+				</button>
+				Why did I use button? Because applying CSS on <a> is a mess
+			-->
+
+			<button>
+				<a href="https://www.github.com">
+					<i class="fa fa-github"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.reddit.com">
+					<i class="fa fa-reddit"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.facebook.com">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.youtube.com">
+					<i class="fa fa-youtube"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.twitter.com">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</button>
+		</div>
+
+	</div>
+
+	<!-- Link to the JavaScript file -->
+	<script src="script.js"></script>
+
+	<!-- JS file for the weather feature -->
+	<script src="weather.js"></script>
+
+</body>
+</html>

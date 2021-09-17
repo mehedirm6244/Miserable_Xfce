@@ -1,0 +1,107 @@
+*
+{
+	font-family: 'Poppins', arial, roboto;
+	outline: none;
+	line-height: 1.2em; 
+}
+
+
+
+p { margin: 0; }
+
+a, a:hover, a:visited, a:active { text-decoration: none; }
+
+button
+{
+	background-color: transparent;
+	border: none;
+	margin: 12px;
+	transition: 0.15s;
+	font-size: 14px;
+}
+
+button:hover
+{
+	transform: translateY(-3px);
+	cursor: pointer;
+}
+
+button a i { font-size: 32px !IMPORTANT; }
+
+select
+{
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+}
+
+select option
+{
+	background-color: #444;
+	color: #eee;
+}
+
+/* The div located in the upper-right part of the page */
+/* It has a <select> tag which allows you to use a different search Engine for searching */
+#selector
+{
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	font-size: 16px;
+}
+
+#time { font-size: 48px; } /* The clock */
+#date { font-size: 24px; } /* The date */
+#temperature { font-size: 32px; } /* The temperature */
+#weather-condition { font-size: 24px; }
+#city{ font-size: 16px; } /* The city whose weather is being displayed */
+
+select:hover, #city:hover
+{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* The searchbar */
+#searchbar
+{
+	width: 450px;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 20px;
+	transition: 0.15s;
+}
+
+
+/* The container... which has all the things of the page inside it */
+#container
+{
+	width: 60%;
+	margin: auto;
+	margin-top: 13%;
+}
+
+
+/* CSS which will be applied when a specific condition is fulfilled */
+@media screen and (max-width: 1000px)
+{
+	#container
+	{
+		margin-top: 17%;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 650px)
+{
+	#time { font-size: 36px; }
+	#date { font-size: 20px; }
+	#container
+	{
+		width: 90%;
+		margin-top: 20%;
+	}
+	#searchbar { width: 100%; }
+	#time { display: block; }
+}

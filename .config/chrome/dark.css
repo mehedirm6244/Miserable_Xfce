@@ -1,0 +1,20 @@
+body
+{
+	background-color: #14161B;
+	color: #eee;
+}
+
+button:hover { text-shadow: 0 5px 10px rgba(255,255,255,0.2); }
+
+button a i { color: #ddd; }
+button:hover a i { color: white; }
+
+select { color: #eee; }
+
+#searchbar { background-color: rgba(255,255,255,0.8); }
+#searchbar:hover
+{
+	background-color: #eee;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#searchbar:focus { background-color: #fff; }
