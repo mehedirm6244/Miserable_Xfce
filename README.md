@@ -19,6 +19,7 @@ Widget | Conky
 GTK-theme | Darknord (Well, that's what I like to call it)
 kvantum-theme | Darknord
 Shell | zsh 5.8 with powerlevel10k prompt
+Fetch tool | [I made it :D](https://github.com/mebesus/sysfex)
 Icon theme | Tela-dark
 Font family | Noto sans
 
