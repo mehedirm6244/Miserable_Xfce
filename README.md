@@ -8,6 +8,10 @@ The GTK theme as well as the kvantume theme used here are forks of the Matcha GT
 
 ![](https://github.com/mebesus/My_XFCE_dotties/blob/main/images/screenshot.png)
 
+## With kvantum apps
+
+![](https://github.com/mebesus/My_XFCE_dotties/blob/main/images/kvantum.png)
+
 ## Description
 
 ### Using Xfce 4.16
