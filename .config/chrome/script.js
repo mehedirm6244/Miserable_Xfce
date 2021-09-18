@@ -1,7 +1,7 @@
 // The clock and date
 const days = [
 	'Sunday', 'Monday', 'Tuesday', 'Wednesday',
-	'Thursday', 'Friday'
+	'Thursday', 'Friday', 'Saturday'
 	];
 
 function datetime()
