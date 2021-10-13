@@ -68,6 +68,7 @@ respect_DE=true
 saturation=1.00
 scrollable_menu=true
 submenu_delay=250
+shadowless_popup=true
 
 [GeneralColors]
 window.color=#14161B

@@ -3,3 +3,10 @@ Type=X-GNOME-Metatheme
 Name=Darknord-GTK-Theme
 Comment=A dark modern design theme
 Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Matcha-dark-azul
+MetacityTheme=Matcha-dark-azul
+IconTheme=Qogir-manjaro
+CursorTheme=Qogir-manjaro
+ButtonLayout=menu:minimize,maximize,close
