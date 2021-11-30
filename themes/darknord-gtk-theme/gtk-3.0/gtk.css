@@ -2284,6 +2284,10 @@ window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerb
   border-top-right-radius: 0;
 }
 
+.titlebar {
+  background-color:  #14161B;
+}
+
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
   background: none;
@@ -2556,7 +2560,6 @@ menubar > menuitem > window.background.popup > menu,
 menu,
 .menu {
   padding: 4px 0;
-  border-radius: 0;
   background-color: #14161B;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -8797,7 +8800,7 @@ panel-toplevel.background button#tasklist-button:active {
 .xfce4-panel {
   background-color: #14161B;
   color: #bbc3c8;
-  font-weight: 500;
+  font-weight: 300;
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
@@ -9685,7 +9688,7 @@ filechooser.csd.background, filechooser placessidebar list,
 
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(48, 52, 62, 0.95);
+  background-color: #14161B;
 }
 
 filechooser placessidebar.sidebar row.sidebar-row,
