@@ -5,7 +5,11 @@
 	line-height: 1.2em; 
 }
 
-
+body
+{
+	background-color: #14161B;
+	color: #eee;
+}
 
 p { margin: 0; }
 
@@ -24,15 +28,23 @@ button:hover
 {
 	transform: translateY(-3px);
 	cursor: pointer;
+	text-shadow: 0 5px 10px rgba(255,255,255,0.2);
 }
 
-button a i { font-size: 32px !IMPORTANT; }
+button a i
+{
+	font-size: 32px !IMPORTANT;
+	color: #ddd;
+}
+
+button:hover a i { color: white; }
 
 select
 {
 	background-color: transparent;
 	border: none;
 	font-size: 16px;
+	color: #eee;
 }
 
 select option
@@ -57,7 +69,7 @@ select option
 #weather-condition { font-size: 24px; }
 #city{ font-size: 16px; } /* The city whose weather is being displayed */
 
-select:hover, #city:hover
+select:hover
 {
 	cursor: pointer;
 	text-decoration: underline;
@@ -71,7 +83,15 @@ select:hover, #city:hover
 	border-radius: 5px;
 	padding: 12px 20px;
 	transition: 0.15s;
+	background-color: rgba(255,255,255,0.8);
 }
+
+#searchbar:hover
+{
+	background-color: #eee;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#searchbar:focus { background-color: #fff; }
 
 
 /* The container... which has all the things of the page inside it */
