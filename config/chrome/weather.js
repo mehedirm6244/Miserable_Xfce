@@ -1,10 +1,10 @@
 // A huge thanks to https://github.com/fahadhassan1213/Weather-Teller
 
 // Put the name of your city here
-const city = 'Savar';
+const city = 'Dhaka';
 
 // Grab your own key from https://www.accuweather.com/
-const key = 'CXhPk82ZAZgV0ngVUWdVBVGePc4qMGqf';
+const key = '';
 
 const getCity = async(city) =>
 {
