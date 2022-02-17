@@ -1,0 +1,118 @@
+;; Special thanks to: https://github.com/rxyhn
+
+;;  resource_usage vars 
+(defpoll CPU_USAGE :interval "1s"  "~/.config/eww/scripts/sys_info --cpu")
+(defpoll MEM_USAGE :interval "1s"  "~/.config/eww/scripts/sys_info --mem")
+(defpoll current-brightness :interval "1s" "brightnessctl -m | awk -F, '{print substr($4, 0, length($4)-1)}' | tr -d '%'")
+(defpoll current-volume :interval "1s" "amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }' | tr -d '%'")
+(defpoll current-battery :interval "1s" "cat /sys/class/power_supply/BAT1/capacity")
+(defpoll BAT_STATUS :interval "1s" "~/.config/eww/scripts/battery")
+
+;; Weather vars
+(defpoll weathericon :interval "1h" "~/.config/eww/scripts/weather --icon")
+(defpoll tempt :interval "1h" "~/.config/eww/scripts/weather --temp" )
+(defpoll descr :interval "1h" "~/.config/eww/scripts/weather --desc")
+
+;; Date vars
+(defpoll date :interval "1s"  "date '+%d'")
+(defpoll month :interval "1s"  "date '+%b'")
+
+;;  ******************************************************************************** 
+
+;;  resource_usage 
+(defwidget resource_usage [] 
+	(box :class "genwin" 
+		 :vexpand "false" 
+		 :hexpand "false" 
+		(box :orientation "v" 
+			 :spacing 25 
+			 :halign "center" 
+			 :valign "center" 
+			 :space-evenly "false" 
+			 :vexpand "false" 
+			 :hexpand "false"
+
+			(box :class "bar" 
+				 :orientation "h" 
+				 :spacing 20 
+				 :space-evenly "false" 
+				 :vexpand "false" 
+				 :hexpand "false" 
+				(label :class "icon" :text "")
+				(scale 
+					:min 0 
+					:max 100 
+					:value CPU_USAGE 
+					:active "false"))
+
+			(box :class "bar" 
+				 :orientation "h" 
+				 :spacing 20 
+				 :space-evenly "false" 
+				 :vexpand "false" 
+				 :hexpand "false" 
+				(label :class "icon" :text "")
+				(scale :min 0 
+					   :max 100 
+					   :value MEM_USAGE 
+					   :active "false"))
+					
+			(box :class "bar" 
+				 :orientation "h" 
+				 :spacing 20 
+				 :space-evenly "false" 
+				 :vexpand "false" 
+				 :hexpand "false" 
+				(label :class "icon" :text BAT_STATUS)
+				(scale 
+					:min 0 
+					:max 100 
+					:value current-battery
+					:active "false")))))
+
+;;	weather
+(defwidget weather [] 
+	(box :class "genwin"
+		 :orientation "h"
+		 :space-evenly "false"
+		 :spacing 25
+		(label :class "weathicon" :text weathericon)
+  		(box :orientation "v"
+  			 :space-evenly "false"
+  			 :spacing 5
+  			 :valign "center"
+  			 :halign "end"
+			(label :class "weathtemp" :text "${tempt}°C")
+			(label :class "weathdesc" :wrap "true" :text descr))))
+
+;;	date
+(defwidget date []
+    (box :class "genwin"
+    	 :orientation "v"
+    	 :space-evenly "false"
+        (label :text {date} :class "day-text" :limit-width 20)
+        (label :text {month} :class "month-text" :limit-width 20)))
+
+;;  resource_usage 
+(defwindow resource_usage :stacking "bg" :focusable "false" :screen 1 :windowtype "dock" 
+	    	:geometry (geometry :x "998" 
+								:y 18
+								:width 350 
+								:height 145)
+	 					(resource_usage))
+
+;;	weather
+(defwindow weather :stacking "bg" :focusable "false" :screen 1 :windowtype "dock"
+			:geometry (geometry :x 1113
+								:y 178
+								:width 235
+								:height 100)
+						(weather))
+
+;; date
+(defwindow date :stacking "bg" :focusable "false" :screen 1 :windowtype "dock"
+			    :geometry (geometry :x 998
+			    					:y 178
+			    					:width 100
+			    					:height 100)
+			     		(date))

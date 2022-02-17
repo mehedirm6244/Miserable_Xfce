@@ -1,0 +1,27 @@
+# Lines starting with '#' indicate that they're comments
+# Available info: 	"host", "os", "kernel", "pkgs", "shell", "model",
+    				"user", "de", "ram", "uptime", "resolution",
+    				"cpu", "colors_dark", "colors_light"
+
+# You can print stuffs or print info, like this:
+# print "This is a text"
+# info "This is OS" os
+
+print "──────  Hardware Information ───────"
+print ""
+info "  " model
+info " 塞" ram
+info "  " cpu
+info "  " resolution
+print ""
+print "──────  Software Information ───────"
+print ""
+info "  " user
+info "  " os
+info "  " kernel
+info "  " de
+info "  " pkgs
+info "  " shell
+print ""
+info "" colors_dark
+info "" colors_light

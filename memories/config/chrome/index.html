@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Start Page</title>
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- Awesome Icons stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<form action="https://google.com/search" method="GET">
+		<input autofocus name="q" type="search"
+		placeholder="Search with Google..." autocomplete="off"/>
+	</form>
+
+	<!-- Some quick links. Change them as you like -->
+	<div id="button-container">
+
+		<!--
+			SYNTAX
+			<button>
+				<a href="link-to-website">
+					<i class="fa fa-name"></i> <-- This is the icon. I'm using AwesomeIcons for this 
+					</a>
+			</button>
+			Why did I use button? Because applying CSS on <a> is a mess
+		-->
+
+		<button>
+			<a href="https://www.github.com">
+				<i class="fa fa-github"></i>
+			</a>
+		</button>
+		<button>
+			<a href="https://www.reddit.com">
+				<i class="fa fa-reddit"></i>
+			</a>
+		</button>
+		<button>
+			<a href="https://www.facebook.com">
+				<i class="fa fa-facebook"></i>
+			</a>
+		</button>
+		<button>
+			<a href="https://www.messenger.com">
+				<i class="fa fa-comment"></i>
+			</a>
+		</button>
+		<button>
+			<a href="https://www.youtube.com">
+				<i class="fa fa-youtube"></i>
+			</a>
+		</button>
+	</div>
+
+</body>
+</html>

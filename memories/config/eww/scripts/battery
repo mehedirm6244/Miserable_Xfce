@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if cat /sys/class/power_supply/BAT1/status | grep -q "Discharging"; then 
+    printf "";
+else
+    printf "";
+fi

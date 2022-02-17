@@ -1,0 +1,118 @@
+.xfce4-panel button
+{
+	padding: 8;
+	transition: 0.2s;
+	box-shadow: none;
+	background-image: none;
+	border-radius: 5;
+	margin: 3 3 3 4;
+}
+.xfce4-panel.background .tasklist button { font-size: 12px; }
+.xfce4-panel.background button:active, 
+.xfce4-panel.background button:hover, 
+.xfce4-panel.background button:active:hover, 
+.xfce4-panel.background .tasklist button:active,
+.xfce4-panel.background .tasklist button:hover, 
+.xfce4-panel.background .tasklist button:active:hover { background-color: rgba(255,255,255,0.03); }
+.xfce4-panel button:checked
+{
+	background-color: rgba(255,255,255,0.05);
+	/*box-shadow: inset 2px 0 #597999;*/
+} 
+
+.tasklist { -XfceTasklist-max-button-length: 160; }
+#pulseaudio-button image {}
+#xfce4-power-manager-plugin {}
+
+#clock-button { padding: 1; }
+#clock-button:hover, #clock-button:checked
+{
+	background-color: transparent;
+	box-shadow: none;
+}
+#separator-1, #separator-5 { color: rgba(255,255,255,0.3) }
+#pager-4 grid {
+	background-color: rgba(255,255,255,0.07);
+	margin: 3 3 3 4;
+	border-radius: 5;
+}
+#pager-4 button {
+	padding: 3;
+	margin: 4 4 4 5;
+	font-size: 12px;
+}
+#pager-4 button:checked
+{
+	box-shadow: none;
+	background-color: #bf616a;
+	color: #EEE;
+}
+
+
+#whiskermenu-window { color: rgba(255,255,255,0.75); }
+#whiskermenu-window entry { background-color: transparent; }
+#whiskermenu-window>frame>stack>box>box * {
+	margin: 0px;
+	padding: 3px;
+	font-size: 14px;
+}
+window#whiskermenu-window>frame>border { border: 5px solid transparent; }
+
+window#whiskermenu-window scrolledwindow { margin: 2px; }
+#whiskermenu-window button { font-size: 14px; }
+
+#whiskermenu-window treeview { padding: 7px 0px 7px 10px; }
+#whiskermenu-window treeview:hover { background-color: rgba(255,255,255,0.1); }
+#whiskermenu-window iconview { font-size: 12px; padding: 5px 0; /*background-color: #22252C;*/ }
+#whiskermenu-window iconview:hover { background-color: rgba(255,255,255,0.1); }
+
+* {
+	-ThunarAbstractIconView-row-spacing: 10;
+	-ThunarAbstractIconView-column-spacing: 20;
+}
+
+.thunar .standard-view .view
+{
+	padding: 5px 14px;
+}
+.thunar .standard-view .view:selected {  }
+.thunar .sidebar
+{
+	background-image: none;
+}
+.thunar .sidebar .view
+{
+	padding: 3px 4px 3px 0;
+}
+.thunar .sidebar { }
+.thunar .sidebar .view:hover { background-color: rgba(255,255,255,0.05); }
+.thunar .sidebar .view:selected {
+	background-color: rgba(255,255,255,0.1);
+	border-left: 2px solid #bf616a;
+}
+
+XfdesktopIconView.label { /*text-shadow: none; color: rgb(40,40,40);*/ }
+
+
+VteTerminal, vte-terminal { padding: 15px; }
+
+.xfsm-logout-dialog { border: 2px solid #2f343f; }
+.xfsm-logout-dialog * { margin: 3px; }
+
+#XfceNotifyWindow { border: none; }
+#XfceNotifyWindow progressbar { border-radius: 5px; }
+#XfceNotifyWindow progressbar progress { min-height: 4px; }
+#XfceNotifyWindow progressbar trough { min-height: 4px; }
+#XfceNotifyWindow image { -gtk-icon-transform: scale(0.8); }
+
+menu, .context-menu { border: none; }
+menu menuitem, .menu menuitem, .context-menu menuitem { padding: 6px 16px; }
+menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover { background-color: rgba(255,255,255,0.1); color: white; }
+.csd.popup decoration { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 0px #22242d; }
+
+button { animation: none; }
+entry { }
+
+#xfwm-tabwin { border-radius: 5px; }
+
+/*box buttonbox { padding: 5; }*/
