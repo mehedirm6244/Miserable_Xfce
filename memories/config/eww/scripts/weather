@@ -10,8 +10,10 @@
 
 updateweather() {
 [ -d /tmp/weather ] || mkdir /tmp/weather
-KEY="30689c795a0e1db1afef08740a97c479"
-ID="1185241"
+# Your API key
+KEY=""
+# The ID of your city
+ID=""
 UNIT="metric"
 weat=$(curl -sf "https://api.openweathermap.org/data/2.5/weather?id="$ID"&appid="$KEY"&units="$UNIT"")
 

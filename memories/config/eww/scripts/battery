@@ -1,6 +1,9 @@
 #!/bin/bash
 
-if cat /sys/class/power_supply/BAT1/status | grep -q "Discharging"; then 
+readonly dir="/sys/class/power_supply/BAT1/status"
+read -r status < "$dir"
+
+if [ $status == "Discharging" ]; then
     printf "";
 else
     printf "";
