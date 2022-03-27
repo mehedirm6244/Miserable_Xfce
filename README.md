@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/mehedirm6244/My_XFCE_dotties/blob/main/images/banner.png"></p>
 
 ## DOTFILES OF MY XFCE SETUP
-This is a dump repository which contains all of the dotfiles for my Xfce I like. Feel free to do whatever with the dots.
+This is a dump repository which contains the dotfiles for my Xfce I like. Feel free to do whatever with the dots.
 
 <b>Disclaimer: Not all of the dots here are OC</b>
 
@@ -21,24 +21,6 @@ App launcher (not visible in this screenshot) | [findex](https://github.com/mdga
 Icon theme | Zafiro and Numix circle (From Archcraft) and Fluent 
 UI font | Roboto
 Terminal font | JetBrains Mono
-
-
-## Seashore
-![](https://github.com/mebesus/My_XFCE_dotties/blob/main/images/seashore.png)
-
-Component | Description
-------------- | -------------
-Widget | Conky
-Compositor | Picom-ibhagwan-git
-GTK-theme | Darknord
-Xfwm-theme | clair-remake
-kvantum-theme | Darknord
-Shell | zsh 5.8 with powerlevel10k prompt
-Fetch tool | [sysfex](https://github.com/mehedirm6244/sysfex)
-Icon theme | Zafiro and Numix circle (From Archcraft) and Fluent 
-Font family | Cantarell
-
-### Most of the configs used here is same to Darknord
 
 
 ## Memories
