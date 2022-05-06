@@ -1,0 +1,24 @@
+# Lines starting with '#' indicate that they're comments
+
+# The gap between the textart and the informations
+pregap = 3
+
+# The gap between key and value
+gap = 0
+
+# Separator
+separator = →
+
+# ascii = 1 means that ascii will be printed
+ascii = 1
+# Path to the ascii
+ascii_path = /home/mehedi/.config/sysfex/ascii/arch.txt
+# Choose whether ascii and info will be printed side by side
+ascii_beside_text = 1
+
+# Self-explanatory
+bold_text = 1
+bold_ascii = 1
+
+# The character/string/whatever which will be used to represent the color palette
+color_block = 

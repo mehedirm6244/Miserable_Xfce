@@ -1,0 +1,33 @@
+.findex-query {
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.findex-results
+{
+    padding: 5px;
+}
+
+.findex-result-row
+{
+    border-radius: 2px;
+}
+
+.findex-result-icon {
+    margin: 10px;
+}
+
+.findex-result-app-name
+{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 7px;
+}
+
+.findex-result-command
+{
+    font-style: italic;
+    opacity: 0.7;
+    margin: 10px;
+}

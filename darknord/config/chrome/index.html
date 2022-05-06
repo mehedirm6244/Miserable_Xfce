@@ -1,0 +1,110 @@
+<html>
+<head>
+	<title>Start Page</title>
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- Poppins font -->
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+	<!-- Awesome Icons stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<noscript>This thing is dead without JavaScript</noscript>
+
+	<div id="selector">
+
+		<!-- 
+			The city whose weather is currently being shown
+			To get the weather info of your desired city, change the value of const 'city' in weather.js
+		-->
+		<span id="city"></span>
+
+		Search Engine: 
+		<!-- 
+			Select your preferred search engine. One time only. The first option is default.
+			Rearrange these options according to your need.
+		-->
+		<select id="engine">
+			<option value="https://duckduckgo.com/">DuckDuckGo</option>
+			<option value="https://google.com/search?q=">Google</option>
+			<option value="https://bing.com/search?q=">Bing</option>
+		</select>
+
+	</div>
+
+
+	<!-- The main stuff starts from here -->
+	<div id="container">
+
+		<!-- Date -->
+		<div><span id="date"></span></div>
+
+		<div style="margin-top: 5px">
+			<!-- Time -->
+			<span id="time"></span>
+			<!-- Temperature -->
+			<span id="temperature"></span>
+			<!-- Weather condition -->
+			<span id="weather-condition"></span>
+		</div>
+
+		<!-- Extra 40px height -->
+		<div style="height: 40px"></div>
+
+		<!-- The search bar -->
+		<input id="searchbar" placeholder="Search..." autocomplete="off">
+
+		<!-- Extra 40px height -->
+		<div style="height: 40px"></div>
+
+		<!-- Some quick links. Change them as you like -->
+		<div id="button-container">
+
+			<!--
+				SYNTAX
+				<button>
+					<a href="link-to-website">
+						<i class="fa fa-name"></i> <-- This is the icon. I'm using AwesomeIcons for this 
+					</a>
+				</button>
+				Why did I use button? Because applying CSS on <a> is a mess
+			-->
+
+			<button>
+				<a href="https://www.github.com">
+					<i class="fa fa-github"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.reddit.com">
+					<i class="fa fa-reddit"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.facebook.com">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.youtube.com">
+					<i class="fa fa-youtube"></i>
+				</a>
+			</button>
+			<button>
+				<a href="https://www.twitter.com">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</button>
+		</div>
+
+	</div>
+
+	<script src="script.js"></script>
+	
+	<!-- JS for the weather feature -->
+	<script src="weather.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+readonly dir="/sys/class/power_supply/BAT1/status"
+read -r status < "$dir"
+
+if [ $status == "Discharging" ]; then
+    printf "";
+else
+    printf "";
+fi

@@ -1,0 +1,77 @@
+$background: #2f343f;
+$background-alt: #434852;
+$foreground: #ddd;
+$accent: #bf616a;
+
+/** Global *******************************************/
+*
+{
+	all: unset;
+}
+
+
+/** Generic window ***********************************/
+.genwin
+{
+	background-color: $background;
+	color: $foreground;
+}
+
+/** System ********************************************/
+.icon
+{
+	font-family: "feather";
+	font-size : 18px;
+	font-weight : normal;
+}
+
+scale trough
+{
+	all: unset;
+	background-color: $background-alt;
+	border-radius: 6px;
+	min-height: 5px;
+	min-width: 250px;
+}
+
+scale trough highlight
+{
+	all: unset;
+	border-radius: 6px;
+	background-color: $accent;
+}
+
+/** Weather ***************************************/
+.weathicon
+{
+	font-family: "JetBrainsMono Nerd Font";
+	margin: 0 25 0 35;
+	font-size: 38;
+	color: $accent;
+}
+
+.weathtemp
+{
+	font-family: roboto;
+	font-size: 24;
+	margin-top: -3;
+}
+
+.weathdesc
+{
+	font-family: roboto;
+	font-size: 18;
+	margin-top: -6;
+}
+
+/** Date ***************************************/
+.day-text
+{
+	margin-top: 16;
+	font-size: 28;
+}
+
+.month-text
+{
+	font-size: 18;
+}

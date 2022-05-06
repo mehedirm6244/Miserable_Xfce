@@ -1,0 +1,10 @@
+default_window_width = 500
+min_content_height = 400
+max_content_height = 400
+max_name_fuzz_result_score = 0.4
+max_command_fuzz_result_score = 0.4
+max_fuzz_distance = 80
+decorate_window = false
+close_window_on_losing_focus = true
+query_placeholder = ""
+icon_size = 32
