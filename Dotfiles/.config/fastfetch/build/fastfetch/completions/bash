@@ -1,0 +1,267 @@
+#!/usr/bin/env bash
+
+__fastfetch_complete_help()
+{
+    local __ff_helps=(
+        "color"
+        "format"
+        "load-config"
+        "os-format"
+        "host-format"
+        "kernel-format"
+        "packages-format"
+        "shell-format"
+        "resolution-format"
+        "de-format"
+        "wm-format"
+        "theme-format"
+        "icons-format"
+        "font-format"
+        "terminal-format"
+        "terminal-font-format"
+        "cpu-format"
+        "cpu-usage-format"
+        "gpu-format"
+        "memory-format"
+        "disk-format"
+        "battery-format"
+        "locale-format"
+        "local-ip-format"
+        "public-ip-format"
+        "datetime-format"
+        "date-format"
+        "time-format"
+    )
+    COMPREPLY=($(compgen -W "${__ff_helps[*]}" -- "$CURRENT_WORD"))
+}
+
+__fastfetch_complete_bool()
+{
+    COMPREPLY=($(compgen -W "true false" -- "$CURRENT_WORD"))
+}
+
+__fastfetch_complete_string()
+{
+    if [[ $CURRENT_WORD != "" ]]; then
+        COMPREPLY=("$CURRENT_WORD")
+    fi
+}
+
+__fastfetch_complete_path()
+{
+    COMPREPLY=($(compgen -A file -- "$CURRENT_WORD"))
+}
+
+__fastfetch_complete_logo()
+{
+    COMPREPLY=($(compgen -W "$(fastfetch --list-logos-autocompletion)" -- "$CURRENT_WORD"))
+}
+
+__fastfetch_complete_option()
+{
+    local FF_OPTIONS_ALL=(
+        "${FF_OPTIONS_BOOL[@]}"
+        "${FF_OPTIONS_STRING[@]}"
+        "${FF_OPTIONS_PATH[@]}"
+        "${FF_OPTIONS_LOGO[@]}"
+    )
+
+    if [[ $WORD_COUND -lt 3 ]]; then
+        FF_OPTIONS_ALL+=(
+            "${FF_OPTIONS_SINGLE[@]}"
+            "${FF_OPTIONS_HELP[@]}"
+        )
+    fi
+
+    for ff_word in ${COMP_WORDS[@]}; do
+        if [[ $ff_word == $CURRENT_WORD ]]; then
+            break
+        fi
+
+        FF_OPTIONS_ALL=("${FF_OPTIONS_ALL[@]/$ff_word}")
+    done
+
+    COMPREPLY=($(compgen -W "${FF_OPTIONS_ALL[*]}" -- "$CURRENT_WORD"))
+}
+
+__fastfetch_previous_matches()
+{
+    for ff_option in "$@"; do
+        if [[ $ff_option == "$PREVIOUS_WORD" ]]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+__fastfetch_completion()
+{
+    local CURRENT_WORD="${COMP_WORDS[$COMP_CWORD]}"
+    local PREVIOUS_WORD="${COMP_WORDS[$COMP_CWORD - 1]}"
+    local WORD_COUND="${#COMP_WORDS[@]}"
+
+    local FF_OPTIONS_SINGLE=(
+        "-v"
+        "--version"
+        "--list-logos"
+        "--list-modules"
+        "--list-presets"
+        "--list-features"
+        "--print-logos"
+        "--print-config"
+        "--print-structure"
+    )
+
+    local FF_OPTIONS_HELP=(
+        "-h"
+        "--help"
+    )
+
+    local FF_OPTIONS_BOOL=(
+        "-r"
+        "--recache"
+        "--nocache"
+        "--show-errors"
+        "--logo-print-remaining"
+        "--multithreading"
+        "--allow-slow-operations"
+        "--disable-linewrap"
+        "--hide-cursor"
+        "--localip-show-ipv4"
+        "--localip-show-ipv6"
+        "--localip-show-loop"
+    )
+
+    local FF_OPTIONS_STRING=(
+        "--logo-type"
+        "--logo-padding"
+        "--logo-padding-left"
+        "--logo-padding-right"
+        "--logo-color-1"
+        "--logo-color-2"
+        "--logo-color-3"
+        "--logo-color-4"
+        "--logo-color-5"
+        "--logo-color-6"
+        "--logo-color-7"
+        "--logo-color-8"
+        "--logo-color-9"
+        "-c"
+        "--color"
+        "--separator"
+        "-s"
+        "--structure"
+        "--set"
+        "--os-format"
+        "--os-key"
+        "--host-format"
+        "--host-key"
+        "--kernel-format"
+        "--kernel-key"
+        "--uptime-format"
+        "--uptime-key"
+        "--processes-format"
+        "--processes-key"
+        "--packages-format"
+        "--packages-key"
+        "--shell-format"
+        "--shell-key"
+        "--resolution-format"
+        "--resolution-key"
+        "--de-format"
+        "--de-key"
+        "--wm-format"
+        "--wm-key"
+        "--wm-theme-format"
+        "--wm-theme-key"
+        "--theme-format"
+        "--theme-key"
+        "--icons-format"
+        "--icons-key"
+        "--font-format"
+        "--font-key"
+        "--cursor-format"
+        "--cursor-key"
+        "--terminal-format"
+        "--terminal-key"
+        "--terminal-font-format"
+        "--terminal-font-key"
+        "--cpu-format"
+        "--cpu-key"
+        "--cpu-usage-format"
+        "--cpu-usage-key"
+        "--gpu-format"
+        "--gpu-key"
+        "--memory-format"
+        "--memory-key"
+        "--disk-format"
+        "--disk-key"
+        "--battery-format"
+        "--battery-key"
+        "--locale-format"
+        "--locale-key"
+        "--disk-folders"
+        "--disk-key"
+        "--local-ip-format"
+        "--local-ip-key"
+        "--public-ip-format"
+        "--public-ip-key"
+        "--player-format"
+        "--player-key"
+        "--song-format"
+        "--song-key"
+        "--datetime-key"
+        "--datetime-format"
+        "--date-format"
+        "--date-key"
+        "--time-format"
+        "--time-key"
+    )
+
+    local FF_OPTIONS_PATH=(
+        "--os-file"
+        "--lib-PCI"
+        "--lib-vulkan"
+        "--lib-wayland"
+        "--lib-xcb-randr"
+        "--lib-xcb"
+        "--lib-Xrandr"
+        "--lib-X11"
+        "--lib-gio"
+        "--lib-DConf"
+        "--lib-DBus"
+        "--lib-XFConf"
+        "--lib-RPM"
+        "--lib-imagemagick"
+        "--lib-z"
+        "--battery-dir"
+        "--load-config"
+    )
+
+    local FF_OPTIONS_LOGO=(
+        "-l"
+        "--logo"
+    )
+
+    if __fastfetch_previous_matches "${FF_OPTIONS_SINGLE[@]}"; then
+        return
+    elif [[ $WORD_COUND -gt 3 && ( ${COMP_WORDS[$COMP_CWORD - 2]} == "--help" || ${COMP_WORDS[$COMP_CWORD - 2]} == "-h" ) ]]; then
+        return
+    elif [[ $CURRENT_WORD == "-"* ]]; then
+        __fastfetch_complete_option
+    elif __fastfetch_previous_matches "${FF_OPTIONS_HELP[@]}"; then
+        __fastfetch_complete_help
+    elif __fastfetch_previous_matches "${FF_OPTIONS_BOOL[@]}"; then
+        __fastfetch_complete_bool
+    elif __fastfetch_previous_matches "${FF_OPTIONS_STRING[@]}"; then
+        __fastfetch_complete_string
+    elif __fastfetch_previous_matches "${FF_OPTIONS_PATH[@]}"; then
+        __fastfetch_complete_path
+    elif __fastfetch_previous_matches "${FF_OPTIONS_LOGO[@]}"; then
+        __fastfetch_complete_logo
+    else
+        __fastfetch_complete_option
+    fi
+}
+
+complete -F __fastfetch_completion fastfetch

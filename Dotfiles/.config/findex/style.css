@@ -1,0 +1,58 @@
+.findex-container
+{
+    background-color: transparent;
+    background-image: url("/home/mehedi/.assets/bg-findex.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.findex-query {
+    padding: 15px;
+    margin: 60px 80px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    border-bottom-width: 1px;
+    background-color: #1d2426;
+}
+
+.findex-results
+{
+    padding: 10px;
+    margin: 0;
+}
+
+.findex-result-row
+{
+    border-radius: 0px;
+}
+
+.findex-result-row:selected
+{
+    box-shadow: inset 2px 0 #e06e6e;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.05);
+}
+
+.findex-result-icon {
+    margin: 10px;
+}
+
+.findex-result-app-name
+{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 7px;
+}
+
+.findex-result-command
+{
+    font-style: italic;
+    opacity: 0.7;
+    margin: 10px;
+}
+
+scrollbar
+{
+    border: none;
+}

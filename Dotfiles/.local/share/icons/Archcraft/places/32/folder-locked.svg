@@ -1,0 +1,21 @@
+<svg version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="a" x2="0" y1="29" y2="8" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3daee9" offset="0"/>
+            <stop stop-color="#6cc1ef" offset="1"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-384.57143,-515.798)">
+        <g transform="translate(-6e-6)">
+            <path d="m386.57144 518.798v8h28v-6h-14.00001l-2-2z" fill="#147eb8" fill-rule="evenodd"/>
+            <path d="m397.57143 523.798-1.99999 1h-9v1h9.99999z" fill-opacity=".235294" fill-rule="evenodd"/>
+            <path transform="translate(384.57143,515.798)" d="m13 8-2 2h-10v19h30v-21z" fill="url(#a)"/>
+            <g fill-opacity=".235294">
+                <path d="m397.57143 523.798-2 2h-10v1h11z" fill="#fff" fill-rule="evenodd"/>
+                <path d="m398.57143 518.798 1 3h15.00001v-1h-14.00001z" fill="#fff" fill-rule="evenodd"/>
+                <rect x="385.57144" y="543.79797" width="30" height="1"/>
+            </g>
+        </g>
+        <path transform="translate(384.57143,515.798)" d="m16 13c-1.662003 0-3 1.337997-3 3v2h-1v5h8v-5h-1v-2c0-1.662003-1.337997-3-3-3zm0 1c1.108 0 2 0.892 2 2v2h-4v-2c0-1.108 0.892-2 2-2z" fill="#1272a5"/>
+    </g>
+</svg>

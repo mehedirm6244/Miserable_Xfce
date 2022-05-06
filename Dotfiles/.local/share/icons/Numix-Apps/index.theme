@@ -1,0 +1,24 @@
+[Icon Theme]
+Name=Numix-Apps
+Comment=Numix icon theme with a circular apps icons design
+
+Inherits=Papirus-Apps
+Example=directory-x-normal
+
+# Directory list
+Directories=48/apps,48@2x/apps
+
+[48/apps]
+Size=48
+Context=Applications
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+[48@2x/apps]
+Size=48
+Scale=2
+Context=Applications
+MinSize=8
+MaxSize=512
+Type=Scalable

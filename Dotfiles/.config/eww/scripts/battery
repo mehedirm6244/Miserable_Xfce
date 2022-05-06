@@ -1,0 +1,16 @@
+#!/bin/bash
+
+readonly dir="/sys/class/power_supply/BAT1/status"
+read -r status < "$dir"
+
+get_icon() {
+    if [ $status == "Discharging" ]; then
+        printf "";
+    else
+        printf "";
+    fi
+}
+
+if [[ "$1" == "--icon" ]]; then
+    get_icon
+fi
