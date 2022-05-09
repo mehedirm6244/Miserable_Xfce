@@ -1,3 +1,5 @@
+**If you're looking for my newer dotfiles, move to [Everblush branch](https://github.com/mehedirm6244/My_XFCE_dotties/tree/Everblush)**
+
 <p align="center"><img src="https://github.com/mehedirm6244/My_XFCE_dotties/blob/main/images/banner.png"></p>
 
 ## DOTFILES OF MY XFCE SETUP
