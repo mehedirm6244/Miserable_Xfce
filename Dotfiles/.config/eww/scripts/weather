@@ -10,7 +10,8 @@
 
 updateweather() {
 [ -d /tmp/weather ] || mkdir /tmp/weather
-KEY="9bbca7999bab7ddce5d4a2f0f1cc01d7"
+# Grab your own key from openweathermap
+KEY=""
 ID="1185241"
 UNIT="metric"
 weat=$(curl -sf "https://api.openweathermap.org/data/2.5/weather?id="$ID"&appid="$KEY"&units="$UNIT"")
