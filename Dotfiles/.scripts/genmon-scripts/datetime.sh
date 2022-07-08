@@ -18,16 +18,8 @@ MORE_INFO="<tool>"
 MORE_INFO+="${DATE}"
 MORE_INFO+="</tool>"
 
-# OnClick
-CLICK="<txtclick>"
-CLICK+="gsimplecal"
-CLICK+="</txtclick>"
-
 # Panel Print
 echo -e "${INFO}"
 
 # Tooltip Print
 echo -e "${MORE_INFO}"
-
-# OnClick Print
-echo -n "${CLICK}"

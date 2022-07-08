@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Logout prompt
+Name=Logout
 Comment=
 Exec=xfce4-session-logout
-Icon=/home/mehedi/.assets/icons/power-button.svg
+Icon=/home/mehedi/.assets/icons/power-button-power-svgrepo-com.svg
 Path=
 Terminal=false
 StartupNotify=false

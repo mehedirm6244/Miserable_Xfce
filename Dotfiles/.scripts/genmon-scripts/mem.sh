@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MEM=$(~/.config/eww/scripts/sys_info --mem)
+MEM=$(printf "%.0f\n" $(free -m | grep Mem | awk '{print ($3/$2)*100}'))
 readonly ICON="$HOME/.assets/icons/pie-chart.svg"
 
 # Panel
@@ -12,16 +12,8 @@ MORE_INFO="<tool>"
 MORE_INFO+="MEM Usage: ${MEM}%"
 MORE_INFO+="</tool>"
 
-# OnClick
-CLICK="<txtclick>"
-CLICK+="xfce4-taskmanager"
-CLICK+="</txtclick>"
-
 # Panel Print
 echo -e "${INFO}"
 
 # Tooltip Print
 echo -e "${MORE_INFO}"
-
-# OnClick Print
-echo -n "${CLICK}"

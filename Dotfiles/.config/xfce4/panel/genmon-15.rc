@@ -1,6 +1,6 @@
 Command=/home/mehedi/.scripts/genmon-scripts/cpu.sh
 UseLabel=0
 Text=(genmon)
-UpdatePeriod=750
+UpdatePeriod=1000
 Font=Roboto 10
 

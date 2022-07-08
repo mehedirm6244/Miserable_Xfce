@@ -10,12 +10,13 @@
 
 updateweather() {
 [ -d /tmp/weather ] || mkdir /tmp/weather
-KEY="GET_YOUR_KEY_FROM_OPENWEATHERMAP"
+KEY="9bbca7999bab7ddce5d4a2f0f1cc01d7"
 ID="1185241"
 UNIT="metric"
 weat=$(curl -sf "https://api.openweathermap.org/data/2.5/weather?id="$ID"&appid="$KEY"&units="$UNIT"")
 
 ID=$(echo "$weat" | jq -r ".weather[].id")
+LOCATION=$(echo "$weat" | jq -r ".name")
 
 desc=""
 icon=""
@@ -191,6 +192,7 @@ if [ "$desc" = "" ]; then
   icon=""
 fi
 echo "$weat" | jq ".main.temp" | cut -d "." -f 1 > /tmp/weather/temp
+echo "$LOCATION" > /tmp/weather/location
 echo "$desc" > /tmp/weather/description
 echo "$icon" > /tmp/weather/icon
 }
@@ -199,5 +201,6 @@ case $1 in
   --icon) cat /tmp/weather/icon ;;
   --desc) cat /tmp/weather/description ;;
   --temp) cat /tmp/weather/temp ;;
+  --location) cat /tmp/weather/location ;;
   *) updateweather ;;
 esac

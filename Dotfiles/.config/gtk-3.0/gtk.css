@@ -46,12 +46,11 @@
 .genmon_plugin {
 	padding: 5px;
 }
-.genmon_plugin button,
-.genmon_plugin button:hover {
-	background-color: transparent;
-}
 .genmon_plugin image {
 	margin-left: 5px;
+}
+.genmon_plugin label {
+	padding: 5px;
 }
 
 /* Docklike plugin */
@@ -74,22 +73,20 @@
 
 #pager-4 button {
 	padding: 3;
-	font-size: 16px;
 	margin: 5;
 	background-color: transparent;
-	font-family: roboto, "feather";
 }
 #pager-4 button:hover {
 	background-color: rgba(255,255,255,0.05);
 }
 #pager-4 button:checked {
 	box-shadow: none;
-	background-color: #6695a3;
+	background-color: rgba(255,255,255,0.1);
 	color: #FFF;
 }
 
 /* 2 Separators before and after the genmon applets */
-#separator-12, #separator-3 {
+#separator-12, #separator-2 {
 	color: rgba(255,255,255,0.2);
 }
 
@@ -120,7 +117,6 @@ window#whiskermenu-window scrolledwindow {
 #launcher-1 button {
 	background-color: #8ccf7e;
 }
-
 
 /******************* Thunar *************************/
 
@@ -162,9 +158,10 @@ VteTerminal, vte-terminal {
 /**************** Xfce notificaton **********************/
 
 #XfceNotifyWindow {
-	border: none;
+	border: 0;
 	/* Let picom decide the border radius */
 	border-radius: 0;
+
 }
 #XfceNotifyWindow progressbar {
 	border-radius: 5px;

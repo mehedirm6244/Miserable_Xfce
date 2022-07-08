@@ -61,6 +61,27 @@ trough highlight {
 }
 
 
+/** Profile ******************************************/
+.profile {
+	background-color: $background-alt;
+}
+
+.username {
+	font-size: 18px;
+	color: #ececec;
+}
+
+.profile .extra-info {
+	font-size: 14px;
+}
+
+.profile-picture {
+	background-image: url('images/avatar.png');
+	background-size: cover;
+	border-radius: 50%;
+}
+
+
 /** Battery and RAM circular widget ******************/
 
 .res-circle {
@@ -83,13 +104,35 @@ trough highlight {
 	color: $green;
 }
 
+.res-swap {
+	background-color: $background;
+}
+
 
 /** Weather ******************************************/
 
 .weathicon {
 	font-family: "JetBrainsMono Nerd Font";
-	font-size: 24;
+	font-size: 32;
 	color: $yellow;
+}
+
+.weather .title {
+	font-size: 16px;
+}
+
+.weather .description {
+	font-size: 22px;
+	margin-top: 2px;
+}
+
+.location {
+	font-size: 14px;
+	font-family: roboto, "feather";
+}
+
+.reload {
+	font-family: "feather"
 }
 
 
@@ -97,12 +140,21 @@ trough highlight {
 
 .dirs {
 	font-size: 16px;
-	padding: 20px 10px;
+	padding: 10px 5px;
 	font-family: roboto, "feather"
 }
 
-.dirs button:hover {
-	color: white;
+.dirs button {
+	transition: 0.1s;
+	border-radius: 3px;
+	padding: 4 9;
+}
+
+.dirs button:hover, .reload:hover {
+	background-color: $background-alt-light;
+}
+.dirs button:active, .reload:active {
+	background-color: $accent;
 }
 
 .disk-usage-box {

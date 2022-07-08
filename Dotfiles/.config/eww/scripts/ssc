@@ -1,9 +1,0 @@
-#!/bin/bash
-
-dateBeforeSSC() {
-    d1=$(date -d 2022-06-19 +%s)
-    d2=$(date -d "$1" +%s)
-    printf $(( (d1 - d2) / 86400 ))
-}
-
-dateBeforeSSC

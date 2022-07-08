@@ -1,0 +1,6 @@
+[user]
+noWindowsListIfSingle=false
+onlyDisplayVisible=true
+indicatorStyle=3
+forceIconSize=true
+iconSize=24
