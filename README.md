@@ -1,7 +1,7 @@
 <p>
-<b>Note 01:</b> If you're looking for my older dotfiles, refer to the main branch<br>
-<b>Note 02:</b> Don't copy/paste any config unless you're completely sure about what you're doing. Currently, copypasting my xfce-specific configs (at `Dotfiles/.config/xfce4`) is deprecated as it will result in system crash, probably. The reason is clarified inside the <b>FAQ</b> section at the end of the readme<br>
-<b>Note 03:</b> I haven't tested anything yet. The eww sidebar is made for <b>1366x768 screen</b>, so you will have to adjust the sidebar yourself if you're using a bigger, or worse, a smaller display.
+    <b>Note 01:</b> If you're looking for my older dotfiles, refer to the main branch<br>
+    <b>Note 02:</b> Don't copy/paste any config unless you're completely sure about what you're doing. Currently, copypasting my xfce-specific configs (at `Dotfiles/.config/xfce4`) is deprecated as it will result in system crash, probably. The reason is clarified inside the <b>FAQ</b> section at the end of the readme<br>
+       <b>Note 03:</b> I haven't tested anything yet. The eww sidebar is made for <b>1366x768 screen</b>, so you will have to adjust the sidebar yourself if you're using a bigger, or worse, a smaller display.
 </p>
 
 # Everblushing Xfce
@@ -47,4 +47,22 @@ I know that there already exists a gtk theme following the Everblush color palet
 Idk for now. Some of my xfce configs have my username used in them and there's no simple way to do something like `$USER/path-to-thing` instead of `/home/your_username/path-to-thing`. So it's likely to happen that your Xfce setup will crash if you just copy/paste my configs. I'm open for suggestions
 
 ### Are the dots finally complete?
-No haha. It shouldn't take a lot time tho.
+I'm not sure if it is. It shouldn't take a lot time tho.
+
+
+## Screenshots
+
+<details>
+  <summary>Desktop</summary>
+    <img src="https://user-images.githubusercontent.com/86041547/178093349-9b5e67c2-1f7a-4388-8bb1-5a5980c4c7f3.png">
+</details>
+
+<details>
+  <summary>Lock screen</summary>
+    <img src="https://user-images.githubusercontent.com/86041547/178093392-6deed394-f465-4af2-b397-e282c447db9f.png">
+</details>
+
+<details>
+  <summary>Busy screenshot 01</summary>
+    <img src="https://user-images.githubusercontent.com/86041547/178093614-82bc1add-e6d5-4835-aa23-2b51543733bb.png">
+</details>
