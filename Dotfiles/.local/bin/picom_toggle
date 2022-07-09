@@ -3,16 +3,18 @@
 # I admit that the following script is a shit, but I have no idea currently
 
 readonly DIR="$HOME/.config/picom.conf"
-status="Enabled"
+message=""
 
 if pidof picom; then
-    status="Disabled"
-fi
-
-notify-send -t 3000 -i "notification" "Picom" ${status}
-
-if [ ${status} == "Disabled" ]; then
-    pkill picom
+    message="Disabling Picom..."
+    kill $(pidof picom)
 else
-    picom --config "${DIR}" -b
+    if [[ -f "/usr/bin/picom" || -f "/bin/picom" || -f "${HOME}/.local/bin/picom" ]]; then
+        picom --config "${DIR}" -b
+        message="Enabling Picom..."
+    else
+        message="Picom not found!"
+    fi
 fi
+
+notify-send -t 3000 -i "notification" "Picom" "${message}"

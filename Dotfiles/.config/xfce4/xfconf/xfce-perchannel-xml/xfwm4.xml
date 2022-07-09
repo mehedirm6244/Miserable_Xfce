@@ -75,13 +75,13 @@
       <value type="string" value="—"/>
       <value type="string" value="二"/>
       <value type="string" value="三"/>
-      <value type="string" value="五"/>
       <value type="string" value="四"/>
-      <value type="string" value="◯"/>
-      <value type="string" value="7"/>
-      <value type="string" value="8"/>
-      <value type="string" value="9"/>
-      <value type="string" value="Workspace 10"/>
+      <value type="string" value="五"/>
+      <value type="string" value="六"/>
+      <value type="string" value="七"/>
+      <value type="string" value="八"/>
+      <value type="string" value="九"/>
+      <value type="string" value="十"/>
       <value type="string" value="Workspace 11"/>
     </property>
     <property name="tile_on_move" type="bool" value="true"/>

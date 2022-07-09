@@ -46,8 +46,8 @@ i3lock \
   --clock \
   --indicator \
   --keylayout 1 \
-  --time-str="%H:%M:%S" \
-  --date-str="%a %b %e %Y" \
+  --time-str="%I:%M %p" \
+  --date-str="%a, %b %e %Y" \
   --verif-text="Verifying..." \
   --wrong-text="Auth Failed" \
   --noinput="No Input" \
@@ -59,7 +59,7 @@ i3lock \
   --verif-font=$font \
   --wrong-font=$font \
   --radius=110 \
-  --ring-width=7 \
+  --ring-width=9 \
   --pass-media-keys \
   --pass-screen-keys \
   --pass-volume-keys \
