@@ -35,6 +35,7 @@ I know that there already exists a gtk theme following the Everblush color palet
 * Config for <b>cava</b>
 * Config for <b>Neofetch</b> and <b>Fastfetch</b>
 * Config for <b>bat</b>
+* Config for <b>btop</b>
 * A custom executable for <b>i3lock-color</b> (can be found at Dotfiles/.local/bin/i3lock-everblush)
 * <b>Zsh</b> config (spaceship-prompt required)
 * Some <b>genmon scripts</b> for xfce-panel
@@ -46,23 +47,25 @@ I know that there already exists a gtk theme following the Everblush color palet
 ### Installation tutorial when?
 Idk for now. Some of my xfce configs have my username used in them and there's no simple way to do something like `$USER/path-to-thing` instead of `/home/your_username/path-to-thing`. So it's likely to happen that your Xfce setup will crash if you just copy/paste my configs. I'm open for suggestions
 
-### Are the dots finally complete?
-I'm not sure if it is. It shouldn't take a lot time tho.
-
 
 ## Screenshots
 
 <details>
   <summary>Desktop</summary>
-    <img src="https://user-images.githubusercontent.com/86041547/178093349-9b5e67c2-1f7a-4388-8bb1-5a5980c4c7f3.png">
+    <img src="https://user-images.githubusercontent.com/86041547/178104170-9ce9e089-5d25-4546-816b-b3e5208e17a4.png">
 </details>
 
 <details>
   <summary>Lock screen</summary>
-    <img src="https://user-images.githubusercontent.com/86041547/178093392-6deed394-f465-4af2-b397-e282c447db9f.png">
+    <img src="https://user-images.githubusercontent.com/86041547/178104198-3fe680f0-c049-4d38-9ef5-96cbdfecdf2b.png">
 </details>
 
 <details>
   <summary>Busy screenshot 01</summary>
     <img src="https://user-images.githubusercontent.com/86041547/178093614-82bc1add-e6d5-4835-aa23-2b51543733bb.png">
+</details>
+
+<details>
+  <summary>Busy screenshot 02</summary>
+  <img src="https://user-images.githubusercontent.com/86041547/178104500-087e3140-0179-4c7b-9aa1-7c5816c03469.png">
 </details>
