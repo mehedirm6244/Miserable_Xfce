@@ -1,4 +1,4 @@
-Command=/home/mehedi/.scripts/genmon-scripts/datetime.sh
+Command=/home/mehedi/genmon-scripts/datetime.sh
 UseLabel=0
 Text=(genmon)
 UpdatePeriod=1000

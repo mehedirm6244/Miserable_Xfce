@@ -1,4 +1,4 @@
-Command=/home/mehedi/.scripts/genmon-scripts/cpu.sh
+Command=/home/mehedi/genmon-scripts/cpu.sh
 UseLabel=0
 Text=(genmon)
 UpdatePeriod=1000

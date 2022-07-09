@@ -60,6 +60,8 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “oppo a12” active: oppo a12 (30%)"/>
+        <value type="string" value="wi-fi network connection “oppo a12” active: oppo a12 (54%)"/>
         <value type="string" value="wi-fi network connection “oppo a12” active: oppo a12 (82%)"/>
         <value type="string" value="wi-fi network connection “oppo a12” active: oppo a12 (75%)"/>
         <value type="string" value="wi-fi network connection “oppo a12” active: oppo a12 (59%)"/>

@@ -1,4 +1,4 @@
-Command=/home/mehedi/.scripts/genmon-scripts/mem.sh
+Command=/home/mehedi/genmon-scripts/mem.sh
 UseLabel=0
 Text=(genmon)
 UpdatePeriod=750
