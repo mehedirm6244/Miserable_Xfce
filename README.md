@@ -1,6 +1,6 @@
 **If you're looking for my newer dotfiles, move to [Everblush branch](https://github.com/mehedirm6244/My_XFCE_dotties/tree/Everblush)**
 
-<p align="center"><img src="https://github.com/mehedirm6244/My_XFCE_dotties/blob/main/images/banner.png"></p>
+<p align="center"><img src="https://github.com/mehedirm6244/My_XFCE_dotties/blob/old/images/banner.png"></p>
 
 ## DOTFILES OF MY XFCE SETUP
 This is a dump repository which contains the dotfiles for my Xfce I like. Feel free to do whatever with the dots.
@@ -8,7 +8,7 @@ This is a dump repository which contains the dotfiles for my Xfce I like. Feel f
 <b>Disclaimer: Not all of the dots here are OC</b>
 
 ## Darknord
-![](https://github.com/mehedirm6244/My_XFCE_dotties/blob/main/images/darknord.png)
+![](https://github.com/mehedirm6244/My_XFCE_dotties/blob/old/images/darknord.png)
 
 Component | Description
 ------------- | -------------
@@ -26,7 +26,7 @@ Terminal font | JetBrains Mono
 
 
 ## Memories
-![](https://github.com/mebesus/My_XFCE_dotties/blob/main/images/memories.png)
+![](https://github.com/mebesus/My_XFCE_dotties/blob/old/images/memories.png)
 
 Component | Description
 ------------- | -------------
@@ -40,7 +40,7 @@ UI font | Roboto
 Terminal font | JetBrains Mono Nerd
 
 ### Yayy startpage
-![](https://github.com/mebesus/My_XFCE_dotties/blob/main/images/startpage_memories.png)
+![](https://github.com/mebesus/My_XFCE_dotties/blob/old/images/startpage_memories.png)
 
 
 <p>
