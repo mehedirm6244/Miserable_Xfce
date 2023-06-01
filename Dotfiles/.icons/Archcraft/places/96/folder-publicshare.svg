@@ -1,0 +1,19 @@
+<svg id="svg15" version="1.1" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs id="defs5455">
+        <linearGradient id="linearGradient4178" x2="0" y1="541.79797" y2="499.78421" gradientTransform="matrix(1.4999996,0,0,1.4995115,-576.85701,-725.43213)" gradientUnits="userSpaceOnUse">
+            <stop id="stop4174-6-7" stop-color="#3daee9" offset="0"/>
+            <stop id="stop4176-6-5" stop-color="#6cc1ef" offset="1"/>
+        </linearGradient>
+    </defs>
+    <g id="layer1" transform="translate(-384.57144,-483.798)">
+        <path id="rect4180" transform="translate(384.57144,483.798)" d="m6 9-1.17e-5 20.999996h84l1.2e-5 -14.999996h-42l-6-6z" fill="#147eb8" stroke-width="1.5"/>
+        <path id="rect4113" transform="translate(384.57144,483.798)" d="M 38.999988,23.999996 33,30 H 5 V 87 H 91 V 24 Z" fill="url(#linearGradient4178)" stroke-width="1.5"/>
+        <g fill-opacity=".235294" stroke-width="1.5">
+            <path id="path4224-1" d="m389.57143 513.798v1h29l4.99999-6.99983-6.00001 6z" fill="#fff" fill-rule="evenodd"/>
+            <path id="path4228-0" d="m390.57143 512.798v1.00017h26.99998l6.00002-6.00017-7 5z" fill-rule="evenodd"/>
+            <path id="path4151-2" transform="translate(384.57144,483.798)" d="m4.9999883 85.999996v1l86-0.01628v-0.983722z"/>
+            <path id="path4196" transform="translate(384.57144,483.798)" d="M 42,9 46.999988,15.999996 90,16 V 15 H 48 Z" fill="#fff" fill-rule="evenodd"/>
+        </g>
+        <path id="path845" d="m428.07144 524.798c-3.03757 0-5.5 2.46243-5.5 5.5s2.46243 5.5 5.5 5.5c3.0376 0 5.5-2.46243 5.5-5.5s-2.4624-5.5-5.5-5.5zm0 1c2.4853 0 4.5 2.01472 4.5 4.5s-2.0147 4.5-4.5 4.5c-2.48528 0-4.5-2.01472-4.5-4.5s2.01472-4.5 4.5-4.5zm13.5 1c-2.2091 0-4 1.79086-4 4s1.7909 4 4 4 4-1.79086 4-4-1.7909-4-4-4zm0 1c1.6569 0 3 1.34315 3 3s-1.3431 3-3 3-3-1.34315-3-3 1.3431-3 3-3zm0 9c-1.68068 0-3.19784 0.6932-4.28711 1.80664 0.25535 0.21426 0.50165 0.43906 0.73828 0.67383 0.90596-0.91346 2.16067-1.48047 3.54883-1.48047 2.7614 0 5 2.2386 5 5v5h-5c-1e-5 0 0 1 0 1h6v-6c0-3.3137-2.6863-6-6-6zm-13.5 2c-5.79899 0-10.5 4.701-10.5 10.5v5.5h21v-5.5c0-5.799-4.701-10.5-10.5-10.5zm0 1c5.2467 0 9.5 4.2533 9.5 9.5v4.5h-19v-4.5c0-5.2467 4.25329-9.5 9.5-9.5z" fill="#1272a5"/>
+    </g>
+</svg>
