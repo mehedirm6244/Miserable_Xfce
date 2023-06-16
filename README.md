@@ -1,4 +1,4 @@
-**If you're looking for my newer dotfiles, move to [Everblush branch](https://github.com/mehedirm6244/My_XFCE_dotties/tree/Everblush)**
+**Travel branches for my newer dotfiles ;)**
 
 <p align="center"><img src="https://github.com/mehedirm6244/My_XFCE_dotties/blob/old/images/banner.png"></p>
 
