@@ -1,10 +1,11 @@
+<center><img src="https://github.com/mehedirm6244/My_XFCE_dotties/assets/86041547/7bc7d69d-7305-4af0-8bc1-5146af468c44"></center>
+
 # Tokyo Night
 Fresh dots comin' ~~soon~~. This time, I'll write documentations for real (jk)
 
-### Early sneak peek
-Things are prone to be changed :)
-
 ![image](https://github.com/mehedirm6244/My_XFCE_dotties/assets/86041547/675fca92-8e65-4e84-b164-64466f8996c8)
+
+Things are prone to be changed :)
 
 - **Distro:** That weird distro with an A in its logo. Distro doesn't matter for this rice, hopefully
 - **Desktop Environment:** Xfce 4.18, obviously
