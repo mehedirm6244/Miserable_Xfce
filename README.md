@@ -35,6 +35,7 @@ Things are prone to be changed :)
 - **Skippy-XD:** Skippy-XD is similar to the expose-thing from MacOS. I use this cause the regular alt-tab is so boring
 - **~/.Xresources** config
 - **Rofi** config, although I use it for rofi-emoji. I use Findex as application launcher
+- **Onboard** tokyonight theme. For real???
 - And some misc stuffs ~~I don't remember about~~
 
 ### What will we have ~~in the upcoming days after my exam and~~ depression ends?
