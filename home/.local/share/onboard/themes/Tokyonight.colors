@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+<!--
+Copyright © 2011 Alan Bell <alanbell@ubuntu.com>
+Copyright © 2011-2013 marmuta <marmvta@gmail.com>
+
+This file is part of Onboard.
+
+Onboard is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+Onboard is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<color_scheme name="Tokyonight" format="2.0">
+    <icon> <color element="background" rgb="#1a1b26" opacity="1.0"/> </icon>
+
+    <layer> <color element="background" rgb="#1a1b26" opacity="1.0"/> </layer>
+    <layer> <color element="background" rgb="#1a1b26" opacity="0.9"/> </layer>
+    <layer> <color element="background" rgb="#1a1b26" opacity="0.9"/> </layer>
+
+    <key_group>
+        <!-- light grey default -->
+        <color element="fill"   rgb="#c0caf5"/>
+        <color element="stroke" rgb="#c0caf5"/>
+        <color element="label"  rgb="#1a1b26"/>
+        <color element="dwell-progress"  rgb="#f19671"/>
+        layer,
+        icon1, icon2,
+        LFSH.grid, SPCE.grid, BKSP.grid, RTRN.grid
+
+	<!-- word suggestions -->
+	<key_group>
+            <color element="fill" opacity="0.9"/>
+	    wordlist, prediction, hide.wordlist
+	</key_group>
+        <key_group>
+            <color element="fill"  rgb="#e5c6b2"/>
+            <color element="label" rgb="#C00000"/>
+            correctionsbg,
+            correction
+        </key_group>
+
+
+        <!-- left pinkie -->
+        <key_group>
+            <color element="fill"   rgb="#f7768e"/>
+            <color element="stroke" rgb="#f7768e"/>
+            AC01
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#f7768e"/>
+            <color element="stroke" rgb="#f7768e"/>
+            icon0,
+            AD01, AB01, ESC, LCTL, LFSH, LWIN, TAB, CAPS, AE01, F1, TLDE, LSGT
+        </key_group>
+
+        <!-- left ring -->
+        <key_group>
+            <color element="fill"   rgb="#7aa2f7"/>
+            <color element="stroke" rgb="#7aa2f7"/>
+            AC02
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#7aa2f7"/>
+            <color element="stroke" rgb="#7aa2f7"/>
+            AD02, AB02, AE02, F2
+        </key_group>
+
+        <!-- left index -->
+        <key_group>
+            <color element="fill"   rgb="#e0af68"/>
+            <color element="stroke" rgb="#e0af68"/>
+            AC03
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#e0af68"/>
+            <color element="stroke" rgb="#e0af68"/>
+            AD03, AB03, AE03, F3
+        </key_group>
+
+        <!-- left pointer -->
+        <key_group>
+            <color element="fill"   rgb="#9ece6a"/>
+            <color element="stroke" rgb="#9ece6a"/>
+            AC04
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#9ece6a"/>
+            <color element="stroke" rgb="#9ece6a"/>
+            AD04, AB04, AE04, F4,
+            AD05, AB05, AE05, F5, AC05
+        </key_group>
+
+        <!-- thumbs -->
+        <key_group>
+            <color element="fill"   rgb="#7aa2f7"/>
+            <color element="stroke" rgb="#7aa2f7"/>
+            LALT, SPCE, RALT
+        </key_group>
+
+        <!-- right pointer -->
+        <key_group>
+            <color element="fill"   rgb="#bb9af7"/>
+            <color element="stroke" rgb="#bb9af7"/>
+            AC07
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#bb9af7"/>
+            <color element="stroke" rgb="#bb9af7"/>
+            AD06, AB06, AE06, F6,
+            AD07, AB07, AE07, F7, AC06
+        </key_group>
+
+        <!-- right index -->
+        <key_group>
+            <color element="fill"   rgb="#9ece6a"/>
+            <color element="stroke" rgb="#9ece6a"/>
+            AC08
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#9ece6a"/>
+            <color element="stroke" rgb="#9ece6a"/>
+            AD08, AB08, AE08, F8
+        </key_group>
+
+        <!-- right ring -->
+        <key_group>
+            <color element="fill"   rgb="#f7768e"/>
+            <color element="stroke" rgb="#f7768e"/>
+            AC09
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#f7768e"/>
+            <color element="stroke" rgb="#f7768e"/>
+            AD09, AB09, AE09, F9
+        </key_group>
+
+        <!-- right pinkie -->
+        <key_group>
+            <color element="fill"   rgb="#8ab4f8"/>
+            <color element="stroke" rgb="#8ab4f8"/>
+            AC10
+        </key_group>
+        <key_group>
+            <color element="fill"   rgb="#8ab4f8"/>
+            <color element="stroke" rgb="#8ab4f8"/>
+            icon3,
+            AD10, AB10, AE10, F10, F11, F12, AC11, AE11, AE12, AD11, AD12
+            RCTL, RTRN, BKSP, RWIN, MENU, RTSH, BKSL, DELE.next-to-backspace
+        </key_group>
+
+    </key_group>
+</color_scheme>
+
