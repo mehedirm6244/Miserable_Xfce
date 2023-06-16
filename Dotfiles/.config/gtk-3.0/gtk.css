@@ -1,0 +1,122 @@
+.xfce4-panel {
+	border: none;
+}
+
+.xfce4-panel button,
+.genmon_plugin {
+	border-radius: 3;
+	margin: 5;
+	padding: 0 6;
+	box-shadow: none;
+	border: none;
+	background-color: #2a2b36;
+	color: rgba(192, 202, 245, 0.7);
+}
+
+.xfce4-panel button:hover {
+	background-color: #32333c;
+}
+
+#docklike-plugin .group {
+	background-color: transparent;
+	margin: 0;
+	border-radius: 0;
+	padding: 0 8;
+}
+#docklike-plugin .active_group {
+	background-color: #32333c;
+}
+
+#clock-18 button {
+	background-color: transparent;
+	color: rgba(192, 202, 245, 0.8);;
+}
+
+#launcher-17 button {
+	background-color: #9ece6a;
+}
+
+.xfce4-panel.background .tasklist button {
+	font-size: 12px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#whiskermenu-8 button {
+	background-color: #7aa2f7;
+}
+
+#whiskermenu-window treeview {
+	padding: 7px 0px 7px 10px;
+}
+
+#whiskermenu-window iconview {
+	padding: 5px 0;
+	border-radius: 3px;
+}
+
+window#whiskermenu-window>frame>border {
+	border: none;
+}
+
+window#whiskermenu-window scrolledwindow {
+	border: none;
+}
+
+#pager-13 grid {
+	margin: 6;
+	padding: 7;
+	border-radius: 15;
+}
+#pager-13 button {
+	padding: 0;
+	margin: 0px 3px;
+	min-width: 1;
+	min-height: 1;
+	background-color: transparent;
+	font-size: 0;
+	border-radius: 69;
+	box-shadow: inset 0px 0px 2px #7aa2f7;
+}
+#pager-13 button:hover {
+	background-color: #7aa2f7;
+}
+#pager-13 button:checked {
+	box-shadow: none;
+	background-color: #9ece6a;
+}
+
+* {
+	-ThunarAbstractIconView-row-spacing: 10;
+	-ThunarAbstractIconView-column-spacing: 10;
+}
+
+VteTerminal, vte-terminal {
+	padding: 20px;
+}
+
+#XfceNotifyWindow {
+	border: 0;
+	/* Let picom decide the border radius */
+	border-radius: 0;
+
+}
+#XfceNotifyWindow progressbar {
+	border-radius: 5px;
+}
+#XfceNotifyWindow progressbar progress,
+#XfceNotifyWindow progressbar trough {
+	min-height: 4px;
+}
+#XfceNotifyWindow image {
+	-gtk-icon-transform: scale(0.5);
+	background-color: #32333c;
+	border-radius: 4px;
+}
+
+.xfsm-logout-dialog {
+	border: 2px solid #1a1b26;
+}
+.xfsm-logout-dialog * {
+	margin: 3px;
+}
