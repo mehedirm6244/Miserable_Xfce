@@ -23,13 +23,10 @@
 	border-radius: 0;
 	padding: 0 8;
 }
-#docklike-plugin .active_group {
-	background-color: #32333c;
-}
 
 #clock-18 button {
 	background-color: transparent;
-	color: rgba(192, 202, 245, 0.8);;
+	color: rgba(192, 202, 245, 0.8);
 }
 
 #launcher-17 button {
