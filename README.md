@@ -4,16 +4,17 @@
 
 ![image](https://github.com/mehedirm6244/My_XFCE_dotties/assets/86041547/675fca92-8e65-4e84-b164-64466f8996c8)
 
-Fresh dots comin' ~~soon~~. This time, I'll write documentations for real (jk). Things are prone to be changed :)
+Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Things are prone to be changed :)
 
 - **Distro:** That weird distro with an A in its logo. Distro doesn't matter for this rice, hopefully
 - **Desktop Environment:** Xfce 4.18, obviously
 - **Window Manager:** Xfwm4, again, obviously
-- **Compositor:** Picom (git version)
+- **Compositor:** Picom ([this](https://github.com/fdev31/picom/tree/animation-pr) fork by [fdev31](https://github.com/fdev31))
 - **Panel:** Xfce4-panel
 - **File Manager:** Thunar
 - **App Launcher:** [Findex](https://github.com/mdgaziur/findex) (You can also find a rofi config here, I use rofi for rofi-emoji)
 - **Widgets:** [Elkowars wacky widgets](https://github.com/elkowar/eww) (User dashboard and system resource monitor)
+- **i3lock-color** script as lockscreen
 - **Skippy-XD:** Skippy-XD is similar to the expose-thing from MacOS
 - ~~Can't remember~~ And more!
 
@@ -29,15 +30,16 @@ Fresh dots comin' ~~soon~~. This time, I'll write documentations for real (jk). 
 
 ### Config files
 - **gtk3.css** config
-- **Picom** config
+- **Picom** config **WITH ANIMATIONS ON XFCE**
 - **Neofetch** config
 - **Skippy-XD:** Skippy-XD is similar to the expose-thing from MacOS. I use this cause the regular alt-tab is so boring
 - **~/.Xresources** config
 - **Rofi** config, although I use it for rofi-emoji. I use Findex as application launcher
 - **Onboard** tokyonight theme. For real???
+- **i3lock-color** lock screen script
 - And some misc stuffs ~~I don't remember about~~
 
-### What will we have ~~in the upcoming days after my exam and~~ depression ends?
+### What will we have ~~in the upcoming days~~after my  ~~exam and~~depression ends?
 
 - Eww widgets (User dashboard, system dashboard, calendar widget ~~and logout screen~~ Xfsession logout prompt is the best 🥴)
 - A nice little startpage
