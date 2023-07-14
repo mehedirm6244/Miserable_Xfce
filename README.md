@@ -2,7 +2,7 @@
   <img src="https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/52c1ef10-7490-4cfb-8dc5-4a7486b27c8d">
 </p>
 
-![image](https://github.com/mehedirm6244/My_XFCE_dotties/assets/86041547/675fca92-8e65-4e84-b164-64466f8996c8)
+![image](https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/2b302c61-d9b9-49eb-86ed-ed18b1a78871)
 
 Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Things are prone to be changed :)
 
@@ -22,9 +22,9 @@ Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Thing
 
 ### Theme related stuff
 - **Colorscheme**: Tokyonight... that's obvious
-- **GTK theme:** Materia-dark-compact, but with Tokyonight colorscheme. Supports GTK2, 3, 4, but not libadwaita. I know about an existing tokyonight gtk theme, but I don't like it, at least not for Xfce
-- **Kvantum theme:** Materia-dark-compact, but with Tokyonight colorscheme.
-- **Xfwm theme:** An Xfwm theme shamelessly stolen from [here](https://github.com/ahmadhabibi14/dotfile) (thanks to [ahmadhabibi](https://github.com/ahmadhabibi14) for his work), with borders added by me
+- **GTK theme:** Lavanda GTK theme by Vinceliuice, but with Tokyonight color palette. Supports GTK 3 and 4, but not libadwaita. I'm aware about an existing tokyonight gtk theme, but I don't like it, at least not for Xfce
+- **Kvantum theme:** Lavendar-Dark by vinceliuice, but with Tokyonight colorscheme.
+- **Xfwm theme:** Forgot where I stole it from
 - **Icon theme:** A modified Zafiro icon theme (with Tokyonight colored folders and symbolic icons), Fluent, and I don't actually even remember
 - **Cursor theme:** [Volantes Cursors](https://www.gnome-look.org/p/1356095/)
 
@@ -44,3 +44,8 @@ Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Thing
 - Eww widgets (User dashboard, system dashboard, calendar widget ~~and logout screen~~ Xfsession logout prompt is the best 🥴)
 - A nice little startpage
 - And some more, idk. I should get psychological treatment
+
+### Dpecial thanks to:
+- [vinceliuice](https://github.com/vinceliuice) for his amazing works!
+- [zayronxio](https://github.com/zayronxio) for the amazing Zafiro icon theme. My all time favourite!
+- [ahmadhabibi](https://github.com/ahmadhabibi14) for his Xfwm theme (Habiboow)
