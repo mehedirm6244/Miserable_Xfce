@@ -2,7 +2,8 @@
   <img src="https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/52c1ef10-7490-4cfb-8dc5-4a7486b27c8d">
 </p>
 
-![image](https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/2b302c61-d9b9-49eb-86ed-ed18b1a78871)
+![screenshot](https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/0c81ce95-c8a5-4ff3-b635-5e459339ace6)
+
 
 Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Things are prone to be changed :)
 
