@@ -22,32 +22,35 @@ X13="$(xrdb -query | grep -m 1 color13: | awk '{print $2}')"
 X14="$(xrdb -query | grep -m 1 color14: | awk '{print $2}')"
 X15="$(xrdb -query | grep -m 1 color15: | awk '{print $2}')"
 
+transparent='00'
+semitransparent='88'
+
 font='Roboto'
 
-background="/usr/share/backgrounds/Custom/tokyonight_sunset.png"
 background_cached="${HOME}/lockscreen.png"
 size=$(xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/')
 
 if [[ ! -f ${background_cached} || $1 == "--cache_background" ]]; then
 	echo "caching background"
+	background=$2
 	eval convert "$background" \
 		-resize "$size""^" \
 		-gravity center \
 		-extent "$size" \
+		-filter Gaussian \
+		-blur 0x5 \
 		"$background_cached"
 fi
 
 i3lock \
-	--insidever-color=$X0 \
-	--insidewrong-color=$X0 \
-	--inside-color=$XBG \
+	--insidever-color=$X0$transparent \
+	--insidewrong-color=$X0$transparent \
+	--inside-color=$XBG$transparent \
 	--ringver-color=$X10 \
 	--ringwrong-color=$X9 \
-	--ringver-color=$X10 \
-	--ringwrong-color=$X9 \
-	--ring-color=$X0 \
-	--line-uses-ring \
-	--keyhl-color=$X12 \
+	--ring-color=$XFG$semitransparent \
+	--line-uses-inside \
+	--keyhl-color=$X10 \
 	--bshl-color=$X11 \
 	--separator-color=$XBG \
 	--verif-color=$X10 \
@@ -61,10 +64,12 @@ i3lock \
 	--indicator \
 	--keylayout 1 \
 	--time-str="%I:%M %p" \
+	--time-size=56 \
 	--date-str="%a, %b %e %Y" \
-	--verif-text="Verifying..." \
-	--wrong-text="Auth Failed" \
-	--noinput="No Input" \
+	--date-size=24 \
+	--verif-text="" \
+	--wrong-text="" \
+	--noinput="" \
 	--lock-text="Locking..." \
 	--lockfailed="Lock Failed" \
 	--time-font=$font \
@@ -72,8 +77,13 @@ i3lock \
 	--layout-font=$font \
 	--verif-font=$font \
 	--wrong-font=$font \
-	--radius=110 \
-	--ring-width=9 \
+	--radius=40 \
+	--ring-width=5 \
+	--ind-pos="w/2:h/2+60" \
+	--time-pos="w/2:h/2-100" \
+	--date-pos="w/2:h/2-56" \
+	--layout-pos="w/2:h-60" \
+	--greeter-pos="w/2:h/2" \
 	--pass-media-keys \
 	--pass-screen-keys \
 	--pass-volume-keys \

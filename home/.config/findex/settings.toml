@@ -1,7 +1,7 @@
 default_window_width = 600
 min_content_height = 400
 max_content_height = 400
-name_match_highlight_color = "#7aa2f7"
+name_match_highlight_color = "#e0af68"
 decorate_window = false
 close_window_on_losing_focus = true
 query_placeholder = "Search for applications"

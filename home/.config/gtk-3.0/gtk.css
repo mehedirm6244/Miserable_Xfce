@@ -1,36 +1,43 @@
-.xfce4-panel {
-	border: none;
-}
-
 .xfce4-panel button,
 .genmon_plugin {
-	border-radius: 3;
-	margin: 5;
-	padding: 0 6;
+	border-radius: 6px;
+	margin: 5px;
+	padding: 0px 6px;
 	box-shadow: none;
 	border: none;
-	background-color: #2a2b36;
+	background-color: #20222e;
 	color: rgba(192, 202, 245, 0.7);
+	box-shadow: inset 0px 0px 2px #282937;
 }
 
 .xfce4-panel button:hover {
-	background-color: #32333c;
+	background-color: #2a2b36;
+}
+
+#separator-5 {
+	color: #2a2b36;
 }
 
 #docklike-plugin .group {
 	background-color: transparent;
-	margin: 0;
-	border-radius: 0;
-	padding: 0 8;
+	box-shadow: none;
+	margin: 0px;
+	border-radius: 0px;
+	padding: 0px 8px;
 }
 
-#clock-18 button {
+#clock-button {
 	background-color: transparent;
 	color: rgba(192, 202, 245, 0.8);
+	box-shadow: none;
 }
 
 #launcher-17 button {
 	background-color: #9ece6a;
+	border-radius: 999px;
+	margin: 7px;
+	padding: 0px 4px;
+	box-shadow: none;
 }
 
 .xfce4-panel.background .tasklist button {
@@ -39,8 +46,12 @@
 	padding-right: 6px;
 }
 
-#whiskermenu-8 button {
+#whiskermenu-button {
 	background-color: #7aa2f7;
+	border-radius: 999px;
+	margin: 7px;
+	padding: 0px 4px;
+	box-shadow: none;
 }
 
 #whiskermenu-window treeview {
@@ -48,12 +59,13 @@
 }
 
 #whiskermenu-window iconview {
-	padding: 5px 0;
+	padding: 5px 0px;
 	border-radius: 3px;
 }
 
 window#whiskermenu-window>frame>border {
 	border: none;
+	margin: 0px;
 }
 
 window#whiskermenu-window scrolledwindow {
@@ -61,18 +73,18 @@ window#whiskermenu-window scrolledwindow {
 }
 
 #pager-13 grid {
-	margin: 6;
-	padding: 7;
-	border-radius: 15;
+	margin: 6px;
+	padding: 9px;
+	border-radius: 15px;
 }
 #pager-13 button {
-	padding: 0;
+	padding: 0px;
 	margin: 0px 3px;
-	min-width: 1;
-	min-height: 1;
+	min-width: 1px;
+	min-height: 1px;
 	background-color: transparent;
-	font-size: 0;
-	border-radius: 69;
+	font-size: 0px;
+	border-radius: 69px;
 	box-shadow: inset 0px 0px 2px #7aa2f7;
 }
 #pager-13 button:hover {
@@ -84,8 +96,8 @@ window#whiskermenu-window scrolledwindow {
 }
 
 * {
-	-ThunarAbstractIconView-row-spacing: 10;
-	-ThunarAbstractIconView-column-spacing: 10;
+	-ThunarAbstractIconView-row-spacing: 10px;
+	-ThunarAbstractIconView-column-spacing: 10px;
 }
 
 VteTerminal, vte-terminal {
@@ -93,9 +105,9 @@ VteTerminal, vte-terminal {
 }
 
 #XfceNotifyWindow {
-	border: 0;
+	border: 0px;
 	/* Let picom decide the border radius */
-	border-radius: 0;
+	border-radius: 0px;
 
 }
 #XfceNotifyWindow progressbar {
@@ -107,7 +119,7 @@ VteTerminal, vte-terminal {
 }
 #XfceNotifyWindow image {
 	-gtk-icon-transform: scale(0.5);
-	background-color: #32333c;
+	background-color: #20222e;
 	border-radius: 4px;
 }
 

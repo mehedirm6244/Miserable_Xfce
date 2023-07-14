@@ -16,6 +16,7 @@ bindkey '^H' backward-kill-word
 bindkey '^[[3;5~' kill-word
 
 autoload -U promptinit; promptinit
+PURE_PROMPT_SYMBOL="❯❯❯"
 prompt pure
 
 # Exec when loading zsh

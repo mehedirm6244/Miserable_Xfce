@@ -4,6 +4,11 @@
     border: none;
 }
 
+.findex-result-row {
+    margin: 4px;
+    border-radius: 6px;
+}
+
 .findex-result-icon {
     margin: 10px;
 }
