@@ -2,10 +2,10 @@
   <img src="https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/52c1ef10-7490-4cfb-8dc5-4a7486b27c8d">
 </p>
 
-![screenshot](https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/0c81ce95-c8a5-4ff3-b635-5e459339ace6)
+![xfce](https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/cb7def2e-3684-442a-85a3-e09b3ac40bd2)
 
 
-Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Things are prone to be changed :)
+Fresh dots comin' ~~soon~~. This time, I'll write documentations for real, no matter how long it takes. Things are prone to be changed (my mind doesn't stay quiet :despair:)
 
 - **Distro:** That weird distro with an A in its logo. Distro doesn't matter for this rice, hopefully
 - **Desktop Environment:** Xfce 4.18, obviously
@@ -22,16 +22,18 @@ Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Thing
 ## What do we have in this repo? (For now)
 
 ### Theme related stuff
-- **Colorscheme**: Tokyonight... that's obvious
-- **GTK theme:** Lavanda GTK theme by Vinceliuice, but with Tokyonight color palette. Supports GTK 3 and 4, but not libadwaita. I'm aware about an existing tokyonight gtk theme, but I don't like it, at least not for Xfce
-- **Kvantum theme:** Lavendar-Dark by vinceliuice, but with Tokyonight colorscheme.
-- **Xfwm theme:** Forgot where I stole it from
+- **Colorscheme**: Tokyonight (Night variant)
+- **GTK theme:** [Lavanda](https://github.com/vinceliuice/Lavanda-gtk-theme), but with Tokyonight color palette. Supports GTK 3 and 4, but not libadwaita. I'm aware about an existing tokyonight gtk theme, but I don't like it, at least not for Xfce
+- **Kvantum theme:** [Lavanda](https://github.com/vinceliuice/Lavanda-kde/tree/main/Kvantum), but with Tokyonight colorscheme applied.
+- **Xfwm theme:** Made in figma. I like to call it "cirkle"
 - **Icon theme:** A modified Zafiro icon theme (with Tokyonight colored folders and symbolic icons), Fluent, and I don't actually even remember
 - **Cursor theme:** [Volantes Cursors](https://www.gnome-look.org/p/1356095/)
 
 ### Config files
+- **bat** config (a better `cat`)
 - **gtk3.css** config
-- **Picom** config **WITH ANIMATIONS ON XFCE**
+- **gtk4.css** config for obvious stuffs
+- **Picom** config **_WITH ANIMATIONS ON XFCE_**
 - **Neofetch** config
 - **Skippy-XD:** Skippy-XD is similar to the expose-thing from MacOS. I use this cause the regular alt-tab is so boring
 - **~/.Xresources** config
@@ -45,8 +47,3 @@ Fresh dots comin' ~~soon~~. This time, I'll write documentations for real. Thing
 - Eww widgets (User dashboard, system dashboard, calendar widget ~~and logout screen~~ Xfsession logout prompt is the best 🥴)
 - A nice little startpage
 - And some more, idk. I should get psychological treatment
-
-### Dpecial thanks to:
-- [vinceliuice](https://github.com/vinceliuice) for his amazing works!
-- [zayronxio](https://github.com/zayronxio) for the amazing Zafiro icon theme. My all time favourite!
-- [ahmadhabibi](https://github.com/ahmadhabibi14) for his Xfwm theme (Habiboow)
