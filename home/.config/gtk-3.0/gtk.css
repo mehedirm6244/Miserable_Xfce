@@ -80,8 +80,6 @@ window#whiskermenu-window scrolledwindow {
 #pager-13 button {
 	padding: 0px;
 	margin: 0px 3px;
-	min-width: 1px;
-	min-height: 1px;
 	background-color: transparent;
 	font-size: 0px;
 	border-radius: 69px;
@@ -111,7 +109,7 @@ VteTerminal, vte-terminal {
 
 }
 #XfceNotifyWindow progressbar {
-	border-radius: 5px;
+	border-radius: 6px;
 }
 #XfceNotifyWindow progressbar progress,
 #XfceNotifyWindow progressbar trough {
@@ -119,8 +117,9 @@ VteTerminal, vte-terminal {
 }
 #XfceNotifyWindow image {
 	-gtk-icon-transform: scale(0.5);
-	background-color: #20222e;
-	border-radius: 4px;
+	background-color: #2a2c37;
+	box-shadow: inset 0px 0px 2px #323340;
+	border-radius: 6px;
 }
 
 .xfsm-logout-dialog {

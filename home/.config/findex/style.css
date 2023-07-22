@@ -1,7 +1,8 @@
 .findex-query {
-    padding: 15px;
+    padding: 14px 18px;
     font-size: 20px;
     border: none;
+    margin: 6px;
 }
 
 .findex-result-row {
