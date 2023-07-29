@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/52c1ef10-7490-4cfb-8dc5-4a7486b27c8d">
-</p>
-
-![xfce](https://github.com/mehedirm6244/Miserable_Xfce/assets/86041547/cb7def2e-3684-442a-85a3-e09b3ac40bd2)
+![xfce](https://github.com/mehedirm6244/Miserable_Xfce/blob/Tokyonight/data/slide.gif)
 
 
 Fresh dots comin' ~~soon~~. This time, I'll write documentations for real, no matter how long it takes. Things are prone to be changed (my mind doesn't stay quiet :despair:)
