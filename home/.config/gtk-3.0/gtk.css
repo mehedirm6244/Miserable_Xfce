@@ -1,7 +1,11 @@
+.xfce4-panel {
+	border: none;
+}
+
 .xfce4-panel button,
 .genmon_plugin {
 	border-radius: 6px;
-	margin: 5px;
+	margin: 7px;
 	padding: 0px 6px;
 	box-shadow: none;
 	border: none;
@@ -35,7 +39,7 @@
 #launcher-17 button {
 	background-color: #9ece6a;
 	border-radius: 999px;
-	margin: 7px;
+	margin: 10px;
 	padding: 0px 4px;
 	box-shadow: none;
 }
@@ -49,7 +53,7 @@
 #whiskermenu-button {
 	background-color: #7aa2f7;
 	border-radius: 999px;
-	margin: 7px;
+	margin: 10px;
 	padding: 0px 4px;
 	box-shadow: none;
 }
@@ -73,13 +77,12 @@ window#whiskermenu-window scrolledwindow {
 }
 
 #pager-13 grid {
-	margin: 6px;
-	padding: 9px;
+	margin: 10px;
 	border-radius: 15px;
 }
 #pager-13 button {
 	padding: 0px;
-	margin: 0px 3px;
+	margin: 7px 3px;
 	background-color: transparent;
 	font-size: 0px;
 	border-radius: 69px;
@@ -96,6 +99,11 @@ window#whiskermenu-window scrolledwindow {
 * {
 	-ThunarAbstractIconView-row-spacing: 10px;
 	-ThunarAbstractIconView-column-spacing: 10px;
+}
+
+menu,
+.context-menu {
+	border-radius: 10px;
 }
 
 VteTerminal, vte-terminal {

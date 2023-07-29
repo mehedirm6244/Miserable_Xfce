@@ -1,5 +1,5 @@
-button_offset=7
-button_spacing=-7
+button_offset=12
+button_spacing=6
 
 show_app_icon=true
 
@@ -10,11 +10,11 @@ title_shadow_inactive=false
 
 title_horizontal_offset=3
 
-active_text_color=#1a1b26
-active_text_shadow_color=#1a1b26
+active_text_color=#20212E
+active_text_shadow_color=#20212E
 
-inactive_text_color=#1a1b26
-inactive_text_shadow_color=#1a1b26
+inactive_text_color=#20212E
+inactive_text_shadow_color=#20212E
 
 shadow_delta_height=2
 shadow_delta_width=0

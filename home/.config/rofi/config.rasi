@@ -7,7 +7,7 @@
 @theme "/dev/null"
 
 * {
-    font:   "Roboto 12";
+    font:   "Overpass 12";
 
     bg0:    #1a1b26;
     bg1:    #20222e;
@@ -28,27 +28,26 @@
 }
 
 window {
-    background-color:   @bg0;
+    background-color:   @bg1;
     location:       center;
-    width:          640;
-    border-radius:  6px;
+    width:          600;
+    border-radius:  10px;
 }
 
 inputbar {
-    font:       "Roboto 20";
+    font:       "Roboto 16";
     background-color: @bg1;
     border:         2px;
     border-color:   @accent;
-    border-radius:  6px;
+    border-radius:  10px;
     padding:    14px 18px;
-    margin:     8px;
     spacing:    12px;
     children:   [ icon-search, entry ];
 }
 
 icon-search {
     expand:     false;
-    filename:   "search";
+    filename:   "search-symbolic";
     size: 24px;
 }
 
