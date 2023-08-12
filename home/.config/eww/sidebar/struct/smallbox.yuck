@@ -1,0 +1,19 @@
+(defwidget smallbox [?classes ?icon ?description] 
+    (box :class "genwin smallbox ${classes}"
+         :space-evenly "true"
+         :orientation "v"
+
+        (box :orientation "h"
+             :space-evenly "false"
+             :valign "center"
+             :halign "center"
+             :spacing {description=="" ? 0 : 5}
+
+            (label  :class "icon"
+                    :text "${icon}")
+            (label  :text "${description}"
+                    :halign "start"
+                    :limit-width 12)
+        )
+    )
+)

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Expose
+Comment=skippy-xd
+Exec=skippy-xd 
+Icon=/home/mehedirm6244/.assets/icons/stack.svg
+Path=
+Terminal=false
+StartupNotify=false

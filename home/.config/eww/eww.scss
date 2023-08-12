@@ -1,0 +1,285 @@
+/** Colors ********************************************/
+
+$background: #20222e;
+$background-alt: #1a1b26;
+$background-alt-light: #2a2b36;
+$foreground: #c0caf5;
+$accent: #7aa2f7;
+
+$red: #f7768e;
+$blue: #7aa2f7;
+$green: #9ece6a;
+$yellow: #e0af68;
+
+
+/** Global *******************************************/
+
+* {
+	all: unset;
+	font-family: overpass, "feather";
+}
+
+graph {
+	color: $foreground;
+}
+
+tooltip {
+	background-color: $background-alt;
+	color: $foreground;
+	border-radius: 6px;
+}
+
+button {
+	background-color: $background;
+	color: $foreground;
+	transition: 0.15s;
+	border-radius: 6px;
+	padding: 8px 10px;
+	margin: 2 6;
+	font-size: 13px;
+
+	&:hover {
+		background-color: $background-alt-light;
+	}
+}
+
+circular-progress {
+	color: $blue;
+	background-color: $background-alt-light;
+}
+
+.icon {
+	font-family: "feather";
+	font-size: 18px;
+}
+
+
+/** Generic window ***********************************/
+
+.genwin {
+	background-color: $background;
+	color: $foreground;
+	margin: 6px;
+	padding: 12px 15px;
+	border-radius: 6px;
+	font-size: 13;
+	box-shadow: inset 0 0px 2px rgba($foreground, 0.08);
+}
+
+
+/** Container widget *********************************/
+
+.container {
+	background-color: $background-alt;
+	padding: 8px;
+	color: $foreground;
+}
+
+
+/** Profile ******************************************/
+
+.profile {
+	background-color: $background-alt;
+	padding: 22px;
+	box-shadow: none;
+
+	.username {
+		font-size: 20px;
+	}
+
+	.extra-info {
+		font-size: 13px;
+	}
+
+	.profile-picture {
+		background-image: url('images/avatar.png');
+		background-size: cover;
+		border-radius: 50%;
+		box-shadow: 0 0 5px rgba($foreground, 0.1);
+	}
+}
+
+
+/** Status boxes ******************************************/
+
+.statusbox, .smallbox {
+	font-size: 14px;
+	.icon {
+		font-size: 24px;
+	}
+}
+
+.smallbox {
+	font-size: 20px;
+}
+
+
+/** For battery **/
+.healthy, .good, .low {
+	color: $background;
+}
+.healthy {
+	background-color: $green;
+}
+.good {
+	background-color: $yellow;
+}
+.low {
+	background-color: $red;
+}
+
+/** Activated **/
+.online {
+	background-color: $blue;
+	color: $background;
+}
+
+
+/** Calendar *****************************************/
+
+calendar {
+	&:selected {
+		color: $accent;
+	}
+	&:indeterminate {
+		color: rgba(205, 219, 249, 0.3);
+	}
+}
+
+.calendar {
+	background-color: $background;
+	.cal-box {
+		.month-year {
+			font-size: 16px;
+			font-weight: 500;
+			margin: 0.25em 0em 0em;
+		}
+		.day-names {
+			margin: .5em .5em 0em;
+			font-size: 14px;
+			font-weight: 500;
+			color: $green;
+		}
+		
+		.cal {
+			padding: 0.4em .25em 0em;
+		}
+	}
+}
+
+
+/** Graph **********************************************/
+
+.cpugraph, .memgraph {
+	graph {
+		margin-top: 10px;
+	}
+}
+
+.cpugraph graph {
+	color: $yellow;
+}
+
+.memgraph graph {
+	color: $green;
+}
+
+
+/** Storage ********************************************/
+
+.disk-storage {
+	padding: 25px;
+
+	circular-progress {
+		background-color: $background-alt-light;
+	}
+
+	circular-progress label {
+		font-size: 28px;
+		color: $foreground;
+	}
+}
+
+
+/** Weather ******************************************/
+
+
+.weather {
+	button {
+		margin: 2;
+		padding: 8;
+	}
+
+	.weathicon {
+		font-family: "JetBrainsMono Nerd Font";
+		font-size: 36;
+	}
+	.title {
+		font-size: 16px;
+		margin-top: -3px;
+	}
+
+	.description {
+		font-size: 22px;
+	}
+
+	.location {
+		font-size: 14px;
+	}
+}
+
+
+
+
+.gmail {
+	background-color: $foreground;
+	color: $background-alt;
+}
+
+
+.music-player {
+    .song-art {
+        background-size: 58% 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+        
+        min-width: 260px;
+        
+        .music-info {
+            all: unset;
+            background-color: transparent;
+            border-radius: 6px;
+            margin-top: 10px;
+            margin-left: -9.1rem;
+
+            .np {
+                margin-bottom: 6px;
+            }
+            .title {
+                font-size: 16px;
+                font-weight: bolder;
+                    }
+                    .artist {
+                        color: $foreground;
+                    }
+                }
+            }
+            
+            .song-controls {
+                background-color: $background-alt-light;
+                padding: 0em ;
+                border-radius: 6px;
+                margin: 12px;
+        
+                button {
+                    font-size: 24px;
+                    background-color: transparent;
+                    margin: 0;
+                }
+
+                button:hover {
+                	background-color: $accent;
+                	color: $background-alt;
+                }
+            }
+        }

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=System stats
+Comment=
+Exec=eww open --toggle sysstat
+Icon=/home/mehedirm6244/.assets/icons/activity.svg
+Path=
+Terminal=false
+StartupNotify=false

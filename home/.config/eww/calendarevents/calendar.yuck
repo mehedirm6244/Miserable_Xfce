@@ -1,0 +1,35 @@
+(defwidget cal[]
+	(box :class "genwin"
+		 :orientation "v"
+		 
+		(box :class "calendar"
+			 :orientation "v"
+			(box :class "cal-box"
+				 :orientation "v"
+				 :space-evenly "false"
+				
+				(box :class "day-names"
+					 :orientation "h"
+					 :space-evenly "true"
+					(label :text "Su")
+					(label :text "Mo")
+					(label :text "Tu")
+					(label :text "We")
+					(label :text "Th")
+					(label :text "Fr")
+					(label :text "Sa")
+				)
+				
+				(calendar :class "cal" 
+						  :show-details false
+						  :show-heading false
+						  :show-day-names false
+						  :day calendar_day
+						  :month calendar_month
+						  :year calendar_year
+						  :active "false"
+				)
+			)
+		)
+	)
+)

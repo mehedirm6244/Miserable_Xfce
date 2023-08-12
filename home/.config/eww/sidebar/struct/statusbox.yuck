@@ -1,0 +1,26 @@
+(defwidget statusbox [?classes ?icon ?header ?description] 
+    (box :class "genwin statusbox ${classes}"
+         :space-evenly "true"
+         :orientation "v"
+
+        (box :orientation "h"
+             :space-evenly "false"
+             :valign "center"
+             :halign "center"
+             :spacing 12
+
+            (label :class "icon"
+                   :text "${icon}"
+            )
+            (box :orientation "v"
+                (label :text header
+                       :halign "start"
+                )
+                (label :text description
+                       :halign "start"
+                       :limit-width 12
+                )
+            )
+        )
+    )
+)

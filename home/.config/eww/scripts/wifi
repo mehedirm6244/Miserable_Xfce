@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Requires iwgetid... every system has it ig
+SSID=$(iwgetid -r)
+STATUS="online"
+ICON=""
+if [ "$SSID" == "" ]; then
+	SSID="Disconnected"
+    STATUS="offline"
+    ICON=""
+fi
+
+case $1 in
+    --status)   printf "$STATUS" ;;
+    --ssid)     printf "$SSID" ;;
+    --icon)     printf "$ICON" ;;
+esac

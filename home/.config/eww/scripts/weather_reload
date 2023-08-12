@@ -1,0 +1,7 @@
+#!/bin/sh
+# I know this sucks and perhaps I don't have any better idea
+
+notify-send	"Updating weather information..." \
+			"Please re-open the eww widget after a few seconds" \
+			-i "notification"
+~/.config/eww/scripts/weather

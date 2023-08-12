@@ -1,0 +1,84 @@
+;; **** Structures *****************************************
+(include "sidebar/struct/statusbox.yuck")
+(include "sidebar/struct/smallbox.yuck")
+
+;; **** Widgets ********************************************
+(include "sidebar/profile.yuck")
+(include "sidebar/weather.yuck")
+(include "sidebar/spotify.yuck")
+
+;; **** Sidebar ********************************************
+(defwidget sidebar []
+
+	(eventbox	:onhoverlost "eww close sidebar"
+		(box :class "container"
+			 :orientation "v"
+			 :space-evenly false
+			 
+			(profile)
+			(box :height 170
+	        	 :width 340
+	        	(weather)
+	        	(box :orientation "v"
+	        		(statusbox  :classes BAT_CLASS
+								:icon BAT_ICON
+								:header "${BAT_PERC}%"
+								:description BAT_STATUS
+					)
+	        		(statusbox  :classes WIFI_STATUS
+                				:icon WIFI_ICON
+                				:header "Wi-Fi"
+                				:description SSID
+    				)
+	        	)
+	        )
+
+	        (box :orientation "h"
+	        	 :space-evenly "false"
+	        	(box :height 85
+	        		 :width 85
+	        			(smallbox :classes "gmail"
+	        					  :icon ""
+	        					  :description gmail
+	        			)
+	        	)
+	        	
+	        	(box :height 85
+	        		 :width 85
+	        			(smallbox :icon ""
+	        					  :description "?"
+	        			)
+	        	)
+
+	        	(box :height 85
+	        		 :width 85
+	        			(smallbox :icon ""
+	        					  :description "?"
+	        			)
+	        	)
+
+	        	(box :height 85
+	        		 :width 85
+	        		 :tooltip "Available updates"
+	        		(smallbox :icon ""
+	        				  :description UPDATES
+	        		)
+	        	)
+	        )
+	        
+	        (box :height 170
+	        	 (spotify)
+	    	)
+		)
+	)
+)
+
+;; **** Sidebar Window ************************************
+(defwindow sidebar :stacking "fg"
+				  :focusable false
+				  :screen 1
+	    		  :geometry (geometry   :x 26
+	    								:y -57
+	    								:anchor "left bottom")
+					(sidebar)
+)

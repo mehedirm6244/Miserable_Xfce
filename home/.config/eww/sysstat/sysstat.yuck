@@ -1,0 +1,73 @@
+;; **** Structures *****************************************
+
+(include "sysstat/struct/resourcegraph.yuck")
+
+;; **** Widgets ********************************************
+
+(include "sysstat/diskspace.yuck")
+
+;; *********************************************************
+
+
+;; **** Sys stat ********************************************
+
+(defwidget sysstat []
+	(eventbox	:onhoverlost "eww close sysstat"
+		(box :class "container"
+			 :orientation "v"
+			 :space-evenly false
+
+			(box :orientation "v"
+				 :style "padding: 10"
+				 :space-evenly "false"
+				(label	:text "System Stats"
+			            :halign "start"
+			            :style "font-size: 22px"
+			    )
+			    (label	:text " ${PROC} processes running"
+			            :halign "start"
+			            :style "font-size: 14px"
+			    )
+			)
+
+			(box :orientation "h"
+				 :space-evenly "false"
+				(box 	:orientation "v"
+						:space-evenly "false"
+		        	(resourcegraph	:title "CPU"
+		        					:description "${CPU}%"
+		        					:perc CPU
+		        					:classes "cpugraph"
+		        	)
+		        	(resourcegraph	:title "Memory"
+		        					:description "${MEM_VALUE} (${MEM}%)"
+		        					:perc MEM
+		        					:classes "memgraph"
+		        	)
+		        )
+		        (diskspace)
+			)
+			
+			(box :orientation "h"
+				 :space-evenly "false"
+				 :style "margin-top: 4px"
+				(button :onclick "./scripts/launch.sh --taskmanager"
+					" Task Manager"
+				)
+			)
+		)
+	)
+)
+
+;; **** Sidebar Window ************************************
+
+(defwindow sysstat 	:stacking "fg"
+				  	:focusable false
+				  	:screen 1
+	    		  	:geometry (geometry	:x -26
+	    								:y -58
+	    								:anchor "bottom right")
+					(sysstat)
+)
+
+;; *********************************************************

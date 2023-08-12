@@ -1,0 +1,26 @@
+(defwidget spotify []
+	(box :class "genwin"
+	     :style "padding: 0"
+	     :tooltip "Spotify"
+	    (box :class "music-player" :orientation "h" :space-evenly "false"
+            (box :class "song-art" :style "background-image: url('${art}')" :tooltip "${song_artist} - ${song_title}" song_art
+                (box :class "music-info" :orientation "v" :space-evenly "false"
+                    (box :class "np" :orientation "h" :space-evenly "false"
+                        (label :class "now-playing" :text "Now Playing")
+                    )
+                    (box :class "title" :orientation "h" :space-evenly "false"
+                        (label :class "song-title" :text song_title)
+                    )
+                    (box :class "artist" :orientation "h" :space-evenly "false"
+                        (label :class "song-artist" :text "by ${song_artist}")
+                    )
+                )
+            )
+        	(box :class "song-controls" :orientation "v"
+            	(button :onclick "playerctl next" "")
+            	(button :class "play-pause" :onclick "playerctl play-pause" player_status)
+                (button :onclick "playerctl previous" "")
+            )
+        )
+    )
+)

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Sidebar
+Comment=Sidebar
+Exec=eww open --toggle sidebar
+Icon=/home/mehedirm6244/Dots/dotfile/components/windows-color.svg
+Path=
+Terminal=false
+StartupNotify=false

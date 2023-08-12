@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Check if PC is online
+wget -q --spider http://google.com
+
+if [ $? -eq 0 ]; then
+	cnt=$(checkupdates | wc -l)
+    if [ $cnt -gt 9 ]; then
+    	echo "+"
+    else
+    	echo $cnt
+    fi
+else
+	echo "!"
+fi

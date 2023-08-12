@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## Get Used Disk Space of the given partition
+
+if [[ "$2" == "--used_value" ]]; then
+    used=$(df -h $1 | awk '{print $3}' | tail -n 1 | sed 's/G/GB/')
+elif [[ "$2" == "--used_perc" ]]; then
+    used=$(df -h $1 | awk '{print $5}' | tail -n 1 | sed 's/.$//')
+elif [[ "$2" == "--total" ]]; then
+    used=$(df -h $1 | awk '{print $2}' | tail -n 1 | sed 's/G/GB/')
+fi
+
+echo "$used"

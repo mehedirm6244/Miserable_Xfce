@@ -1,0 +1,81 @@
+(defwidget diskspace[]
+	(box 	:class "disk-storage genwin"
+			:space-evenly "true"
+			:orientation "v"
+
+		(box 	:space-evenly "false"
+				:orientation "h"
+				:spacing 20
+			(box :space-evenly "false"
+				 :orientation "v"
+				 :valign "center"
+				 :width 133
+				(label 	:text "Root"
+						:style "font-size: 18px"
+						:halign "start"
+				)
+				(label 	:text "${DISK_ROOT_USED} of ${DISK_ROOT_TOTAL} used"
+						:halign "start"
+				)
+			)
+			(circular-progress  :value DISK_ROOT_USED_PERC
+								:thickness 3
+								:start-at 75
+								:style "color: #f7768e"
+				(label	:text ""
+						:style "padding: 20px;"
+				)
+			)
+		)
+
+		(box 	:space-evenly "false"
+				:orientation "h"
+				:spacing 20
+			(box :space-evenly "false"
+				 :orientation "v"
+				 :valign "center"
+				 :width 133
+				(label 	:text "Home"
+						:style "font-size: 18px"
+						:halign "start"
+				)
+				(label 	:text "${DISK_HOME_USED} of ${DISK_HOME_TOTAL} used"
+					:halign "start"
+				)
+			)
+			(circular-progress  :value DISK_HOME_USED_PERC
+						:thickness 3
+						:start-at 75
+						:style "color: #bb9af7"
+				(label	:text ""
+						:style "padding: 20px;"
+				)
+			)
+		)
+		
+		(box 	:space-evenly "false"
+				:orientation "h"
+				:spacing 20
+			(box :space-evenly "false"
+				 :orientation "v"
+				 :valign "center"
+				 :width 133
+				(label 	:text "Swap"
+						:style "font-size: 18px"
+						:halign "start"
+				)
+				(label 	:text "${SWAP_USED} of ${SWAP_TOTAL} used"
+						:halign "start"
+				)
+			)
+			(circular-progress  :value SWAP_PERC
+								:thickness 3
+								:start-at 75
+								:style "color: #8ab4f8"
+				(label	:text ""
+						:style "padding: 20px;"
+				)
+			)
+		)
+	)
+)

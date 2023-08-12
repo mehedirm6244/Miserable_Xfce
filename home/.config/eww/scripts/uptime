@@ -1,0 +1,16 @@
+#!/bin/bash
+
+get_uptime() {
+	s=$(< /proc/uptime)
+	s=${s/.*}
+
+    d=$((s / 60 / 60 / 24))
+    h=$((s / 60 / 60 % 24))
+    m=$((s / 60 % 60))
+
+    uptime="${d}d ${h}h ${m}m"
+
+    echo ${uptime}
+}
+
+get_uptime
