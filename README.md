@@ -1,7 +1,9 @@
-![xfce](https://github.com/mehedirm6244/Miserable_Xfce/blob/Tokyonight/data/slide.gif)
+![xfce](https://github.com/mehedirm6244/Miserable_Xfce/blob/Serenade/data/slide.gif)
 
+I'll write documentations for real, no matter how long it takes.
 
-Fresh dots comin' ~~soon~~. This time, I'll write documentations for real, no matter how long it takes. Things are prone to be changed (my mind doesn't stay quiet :despair:)
+### Workflow: [Youtube](https://youtu.be/gfmeCiskZwM)
+### r/unixporn post: [Reddit](https://www.reddit.com/r/unixporn/comments/15o6n6t/xfce_serenade_xfce_with_animations/?utm_source=share&utm_medium=web2x&context=3)
 
 - **Distro:** That weird distro with an A in its logo. Distro doesn't matter for this rice, hopefully
 - **Desktop Environment:** Xfce 4.18, obviously
@@ -38,8 +40,4 @@ Fresh dots comin' ~~soon~~. This time, I'll write documentations for real, no ma
 - **i3lock-color** lock screen script
 - And some misc stuffs ~~I don't remember about~~
 
-### What will we have ~~in the upcoming days~~after my  ~~exam and~~depression ends?
-
-- Eww widgets (User dashboard, system dashboard, calendar widget ~~and logout screen~~ Xfsession logout prompt is the best 🥴)
-- A nice little startpage
-- And some more, idk. I should get psychological treatment
+### Readme is to be changed soon, to make more sense
