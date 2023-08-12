@@ -1,0 +1,11 @@
+;; **** Variables ******************************************
+(include "variables.yuck")
+
+;; Sidebar
+(include "sidebar/sidebar.yuck")
+
+;; System stat
+(include "sysstat/sysstat.yuck")
+
+;; Calendar
+(include "calendarevents/calendarevents.yuck")

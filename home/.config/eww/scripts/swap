@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+SWAP_USED_PERC=$(printf "%.0f\n" $(free -m | grep Swap | awk '{print ($3/$2)*100}'))
+SWAP_USED=$(printf $(free -h | grep Swap | awk '{print $3}'))
+SWAP_TOTAL=$(printf $(free -h | grep Swap | awk '{print $2}'))
+
+case $1 in
+    --perc) printf ${SWAP_USED_PERC} ;;
+    --used) printf ${SWAP_USED} ;;
+    --total) printf ${SWAP_TOTAL} ;;
+esac

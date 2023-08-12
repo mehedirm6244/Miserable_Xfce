@@ -1,0 +1,20 @@
+(defwidget resourcegraph[?title ?description ?perc ?classes]
+	(box 	:class "genwin ${classes}"
+	    	:orientation "v"
+	        :space-evenly "false"
+	    (label	:text title
+	            :halign "start"
+	            )
+	    (label	:text description
+	            :halign "start"
+	            :style "font-size: 20px"
+	            )
+		(graph	:value perc
+	        	:time-range "30s"
+	        	:thickness 2
+	        	:height 50
+	        	:width 176
+	        	:line-style "round"
+	    )
+	)
+)

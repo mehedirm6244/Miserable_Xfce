@@ -1,0 +1,72 @@
+;; ***** DISK USAGE ********************************************
+
+(defpoll DISK_ROOT_TOTAL :interval "1s"  "./scripts/disk / --total")
+(defpoll DISK_ROOT_USED :interval "1s"  "./scripts/disk / --used_value")
+(defpoll DISK_ROOT_USED_PERC :interval "1s"  "./scripts/disk / --used_perc")
+(defpoll DISK_HOME_TOTAL :interval "1s"  "./scripts/disk ~/ --total")
+(defpoll DISK_HOME_USED :interval "1s"  "./scripts/disk ~/ --used_value")
+(defpoll DISK_HOME_USED_PERC :interval "1s"  "./scripts/disk ~/ --used_perc")
+
+
+;; ***** CPU MEMORY AND SWAP ***********************************
+
+(defpoll CPU :interval "0.5s" "./scripts/cpu")
+(defpoll MEM :interval "0.5s" "./scripts/mem")
+(defpoll MEM_VALUE :interval "1s" "./scripts/mem --value")
+(defpoll PROC :interval "1s" "./scripts/processes")
+(defpoll SWAP_TOTAL :interval "1s"  "./scripts/swap --total")
+(defpoll SWAP_USED :interval "1s"  "./scripts/swap --used")
+(defpoll SWAP_PERC :interval "1s"  "./scripts/swap --perc")
+
+
+;; ***** BATTERY AND WIFI **************************************
+
+(defpoll BAT_PERC :interval "1s" "./scripts/battery --perc")
+(defpoll BAT_ICON :interval "1s" "./scripts/battery --icon")
+(defpoll BAT_STATUS :interval "1s" "./scripts/battery --stat")
+(defpoll BAT_CLASS :interval "1s" "./scripts/battery --class")
+(defpoll SSID :interval "1s" "./scripts/wifi --ssid")
+(defpoll WIFI_STATUS :interval "1s" "./scripts/wifi --status")
+(defpoll WIFI_ICON :interval "1s" "./scripts/wifi --icon")
+
+
+;; ***** CALENDAR VARIABLES ************************************
+
+(defpoll calendar_day :interval "10h" "date '+%d'")
+(defpoll calendar_weekday :interval "10h" "date '+%A'")
+(defpoll calendar_month :interval "10h" "date '+%m'")
+(defpoll calendar_month2 :interval "10h" "date '+%B'")
+(defpoll calendar_year :interval "10h" "date '+%Y'")
+(defpoll month_year :interval "24h" "date '+%B %Y'")
+
+
+;; ***** USER PROFILE VARS *************************************
+
+(defpoll username :interval "69420s" `whoami`)
+(defpoll host :interval "69420s" `hostname`)
+(defpoll uptime :interval "1s" `./scripts/uptime`)
+
+
+;; ***** WEATHER VARIABLES *************************************
+
+(defpoll weathericon :interval "1h" "./scripts/weather --icon")
+(defpoll tempt :interval "1h" "./scripts/weather --temp" )
+(defpoll descr :interval "1h" "./scripts/weather --desc")
+(defpoll location :interval "1h" "./scripts/weather --location")
+
+
+;; ***** MUSIC PLAYER VARIABLES ********************************
+
+(defpoll art :interval "5s" "./scripts/spotify_helper --echo_song_art")
+(defpoll song_art :interval "5s" "./scripts/spotify_helper --get_song_art")
+(defpoll song_artist :interval "5s" "./scripts/spotify_helper --get_song_artist")
+(defpoll song_title :interval "2s" "./scripts/spotify_helper --get_song_title")
+(defpoll player_status :interval "2s" "./scripts/spotify_helper --get_player_status")
+
+
+;; ***** MISC STUFFS *******************************************
+
+;; Gmail unread count
+(defpoll gmail :interval "1800s" "./scripts/gmail.sh")
+;; Available updates (for pacman only)
+(defpoll UPDATES :interval "3600s" "./scripts/updates")

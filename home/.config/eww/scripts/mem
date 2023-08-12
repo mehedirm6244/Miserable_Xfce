@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+MEM=$(printf "%.0f\n" $(free -m | grep Mem | awk '{print ($3/$2)*100}'))
+MEM_VALUE=$(printf $(free -h | grep Mem | awk '{print $3}'))
+
+if [[ "$1" == "--value" ]]; then
+    printf ${MEM_VALUE}
+else
+	echo -e ${MEM}
+fi

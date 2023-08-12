@@ -1,0 +1,30 @@
+#!/bin/bash
+
+BAT=`ls /sys/class/power_supply | grep BAT | head -n 1`
+dir="/sys/class/power_supply/${BAT}/status"
+perc=$(cat /sys/class/power_supply/${BAT}/capacity)
+read -r status < "$dir"
+
+if [[ "$1" == "--perc" ]]; then
+    printf "$perc"
+
+elif [[ "$1" == "--stat" ]]; then
+    printf "$status"
+
+elif [[ "$1" == "--icon" ]]; then
+    if [ $status == "Discharging" ]; then
+        printf "";
+    else
+        printf "";
+    fi
+
+elif [[ "$1" == "--class" ]]; then
+    if [[ "$status" == "Charging" || $perc -ge 75 ]]; then
+        printf "healthy"
+    elif [ $perc -ge 40 ]; then
+        printf "good"
+    else
+        printf "low"
+    fi
+    
+fi

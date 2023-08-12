@@ -1,0 +1,44 @@
+(defwidget weather [] 
+	(box :class "genwin weather"
+  		(box :orientation "v"
+  		  	 :space-evenly "false"
+
+  		  	(box :orientation "v"
+  		  		 :space-evenly "false"
+
+  		  		(box 	:space-evenly "false"
+  		  				:halign "begin"
+  		  			(label  :class "location"
+							:wrap "true"
+							:text " ${location}"
+							)
+  		  			(button :class "reload"
+  		  		 		 	:onclick "scripts/weather_reload" 
+      					(label  :text ""))
+
+				)
+
+				(box :space-evenly "false"
+					 :orientation "v"
+					(label  :class "weathicon"
+							:text "${weathericon}"
+							:halign "start"
+					)
+					(box :orientation "v"
+						 :space-evenly "false"
+						(label  :class "description"
+								:text "${tempt}°C"
+								:halign "start"
+							)
+
+						(label  :class "title"
+								:wrap "true"
+								:text descr
+								:halign "start"
+							)
+					)	
+				)			
+			)
+		)
+	)
+)

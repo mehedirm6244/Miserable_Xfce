@@ -1,0 +1,39 @@
+;; **** Widgets ********************************************
+(include "calendarevents/calendar.yuck")
+
+;; **** calendarevent **************************************
+(defwidget calendarevent []
+
+	(eventbox :onhoverlost "eww close calendarevent"
+		(box :class "container"
+			 :orientation "v"
+			 :space-evenly false
+			 :width 360
+
+			(box :style "padding: 10px"
+				 :orientation "v"
+				 :space-evenly "false"
+				(label :text "It's ${calendar_weekday}!"
+					   :halign "start"
+					   :style "font-size: 22px"
+				)
+				(label :text " ${calendar_month2} ${calendar_day}, ${calendar_year}"
+					   :halign "start"
+					   :style "font-size: 14px"
+				)
+			)
+			
+			(cal)
+		)
+	)
+)
+
+;; **** calendarevent Window ************************************
+(defwindow calendarevent :stacking "fg"
+				  		 :focusable false
+				  		 :screen 1
+	    		  		 :geometry (geometry :x -26
+	    							  		 :y -57
+	    							  		 :anchor "right bottom")
+	(calendarevent)
+)
