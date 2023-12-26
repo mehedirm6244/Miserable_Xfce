@@ -1,6 +1,6 @@
 ![xfce](https://github.com/mehedirm6244/Miserable_Xfce/blob/Serenade/data/slide.gif)
 
-I'll write documentations for real, no matter how long it takes.
+~~I'll write documentations for real, no matter how long it takes.~~ I won't. Sorry.
 
 ### Workflow: [Youtube](https://youtu.be/gfmeCiskZwM)
 ### r/unixporn post: [Reddit](https://www.reddit.com/r/unixporn/comments/15o6n6t/xfce_serenade_xfce_with_animations/?utm_source=share&utm_medium=web2x&context=3)
