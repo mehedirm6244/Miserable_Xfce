@@ -33,8 +33,8 @@ After running the install script, follow the guide below to set up the recommend
 
 ## Contributors
 
-- Original Project: [mehedirm6244](https://github.com/mehedirm6244)
-- Script Developer: [G-flame](https://github.com/g-flame)
+- Original Project Developer: [mehedirm6244](https://github.com/mehedirm6244)
+- Script & install guide Developer: [G-flame](https://github.com/g-flame)
 
 ---
 
