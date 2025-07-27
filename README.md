@@ -5,6 +5,8 @@
 A repository containing everything you need to set up this environment.
 star the repo if you like it!
 
+### Workflow: [Youtube](https://youtu.be/gfmeCiskZwM)
+### r/unixporn post: [Reddit](https://www.reddit.com/r/unixporn/comments/15o6n6t/xfce_serenade_xfce_with_animations/?utm_source=share&utm_medium=web2x&context=3)
 ---
 
 ## Quick Installation
