@@ -12,7 +12,7 @@ star the repo if you like it!
 To get started quickly, run the following command in your terminal:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/g-flame-oss/GfDE/refs/heads/main/clone.sh)
+bash <(curl -s https://raw.githubusercontent.com/mehedirm6244/Miserable_Xfce/refs/heads/Serenade/scripts/clone.sh)
 ```
 
 ---
@@ -26,8 +26,8 @@ bash <(curl -s https://raw.githubusercontent.com/g-flame-oss/GfDE/refs/heads/mai
 
 After running the install script, follow the guide below to set up the recommended GNOME extensions:
 
-### [Settings setup](docs/other.md)
-### [Taskbar setup](assets/theme/theme-setup.md)
+### [Settings setup](docs/setup.md)
+
 
 ---
 
