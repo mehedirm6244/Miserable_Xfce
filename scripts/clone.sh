@@ -28,7 +28,7 @@ if ! command -v git &> /dev/null; then
 fi
 
 # Clone repo
-REPO_URL="https://github.com/g-flame/Miserable_Xfce.git"
+REPO_URL="https://github.com/mehedirm6244/Miserable_Xfce.git"
 REPO_DIR="Miserable_Xfce"
 
 # Remove existing directory
