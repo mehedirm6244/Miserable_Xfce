@@ -38,7 +38,7 @@ REPO_DIR="Miserable_Xfce"
 cd /tmp
 git clone "$REPO_URL"
 cd "$REPO_DIR"
-chmod +x scripts/install.sh
+chmod +x scripts/installer.sh
 cd scripts
 ./installer.sh
 echo "install script ended !"
