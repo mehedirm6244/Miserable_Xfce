@@ -12,20 +12,9 @@ A animated Xfce desktop environment with transitions and aesthetics. Everything 
 
 ---
 
-## What's Inside
-
-This setup delivers:
-- Seamless animations across the entire desktop experience
-- Meticulously designed theme and color palette
-- Optimized panel configurations and layouts
-- Complete dotfiles for instant recreation
-- Automated installation process
-
----
-
 ## Installation
 
-Get everything running in one go:
+Get the base setup running in one go!:
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/mehedirm6244/Miserable_Xfce/refs/heads/Serenade/scripts/clone.sh)
