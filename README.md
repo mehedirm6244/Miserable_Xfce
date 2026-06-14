@@ -20,7 +20,21 @@ Get the base setup running in one go!:
 bash <(curl -s https://raw.githubusercontent.com/mehedirm6244/Miserable_Xfce/refs/heads/Serenade/scripts/clone.sh)
 ```
 
-**After installation, reboot your system.** Then proceed to setup.
+## Arch only
+
+**After installation, install dependences with your favourite AUR helper** 
+
+paru
+```bash
+paru -S eww neofetch skippy-xd-git
+```
+
+yay
+```bash
+yay -S eww neofetch skippy-xd-git
+```
+---
+Then proceed to setup.
 
 ---
 
