@@ -80,7 +80,7 @@ install_core() {
     echo -e "${BLUE}Installing Xfce desktop environment...${NC}"
     case $OS in
     arch)
-        $INSTALL_CMD xfce4 xfce4-goodies sddm noto-fonts thunar xfce4-panel bat neofetch rofi i3lock-color skippy-xd eww onboard base-devel git meson ninja libxext libxcb xcb-util-damage xcb-util-renderutil libconfig dbus pixman libev uthash libgl libegl pcre2
+        $INSTALL_CMD xfce4 xfce4-goodies sddm noto-fonts thunar xfce4-panel bat rofi i3lock-color onboard base-devel git meson ninja libxext libxcb xcb-util-renderutil libconfig dbus pixman libev uthash libgl libegl pcre2
         sudo systemctl enable sddm
         ;;
     debian)
