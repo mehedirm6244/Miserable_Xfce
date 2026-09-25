@@ -14,7 +14,7 @@ A animated Xfce desktop environment with transitions and aesthetics. Everything 
 
 ## Installation
 
-Get the base setup running in one go!:
+Get the base setup running in one go:
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/mehedirm6244/Miserable_Xfce/refs/heads/Serenade/scripts/clone.sh)
@@ -22,7 +22,7 @@ bash <(curl -s https://raw.githubusercontent.com/mehedirm6244/Miserable_Xfce/ref
 
 ## Arch only
 
-**After installation, install dependences with your favourite AUR helper** 
+**After installation, install dependencies with your favourite AUR helper**
 
 paru
 ```bash
