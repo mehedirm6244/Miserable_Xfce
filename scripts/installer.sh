@@ -106,7 +106,12 @@ install_core() {
 # Install customizations
 Miserable_Xfce(){
     echo "Launching Customization script..."
-    bash /tmp/scripts/Miserable_Xfce.sh
+    # Resolve repo path from script location to avoid hardcoded /tmp/scripts
+    local script_dir
+    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    local repo_root
+    repo_root="$(cd "$script_dir/.." && pwd)"
+    bash "$repo_root/scripts/Miserable_Xfce.sh"
     echo "Customization script finished executing finishing up...."
 }
 
@@ -133,7 +138,7 @@ show_menu() {
     echo "1. Miserable_Xfce installation"
     echo "2. Exit"
     echo
-    read -p "Choose option (1-3): " choice
+    read -p "Choose option (1-2): " choice
     
     case $choice in
         1)  install_core

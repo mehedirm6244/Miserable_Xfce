@@ -53,15 +53,32 @@ check_dependencies() {
 # Setup directory structure
 setup_directories() {
     echo -e "${BLUE}Setting up directories...${NC}"
-    cd "/tmp/$REPO_DIR"
-    
-    for f in home/.* home/*; do
-        if [ -e "$f" ] && [ "$f" != "home/." ] && [ "$f" != "home/.." ]; then
-            mv "$f" ~/
+    # Resolve repo root relative to this script's location
+    local script_dir repo_root
+    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    repo_root="$(cd "$script_dir/.." && pwd)"
+    cd "$repo_root" || { echo -e "${RED}Failed to cd into $repo_root${NC}"; exit 1; }
+
+    # Use find to safely list dotfiles and regular files in home/, skipping . and ..
+    # Back up any existing dotfiles to avoid clobbering user config
+    local backup_dir="$HOME/.miserable_xfce_backup_$(date +%s)"
+    mkdir -p "$backup_dir"
+
+    while IFS= read -r -d '' f; do
+        local name
+        name="$(basename "$f")"
+        # Skip . and ..
+        if [ "$name" = "." ] || [ "$name" = ".." ]; then
+            continue
         fi
-    done
-    
-    echo -e "${GREEN}Directory setup complete${NC}"
+        # Backup if a file with the same name exists in $HOME
+        if [ -e "$HOME/$name" ]; then
+            mv "$HOME/$name" "$backup_dir/" 2>/dev/null || true
+        fi
+        mv "$f" "$HOME/"
+    done < <(find "$repo_root/home" -mindepth 1 -maxdepth 1 -print0)
+
+    echo -e "${GREEN}Directory setup complete (backups in $backup_dir)${NC}"
 }
 
 # Install picom animation fork

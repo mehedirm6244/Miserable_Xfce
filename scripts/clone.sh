@@ -7,7 +7,7 @@
 
 set -e
 
-# package manager dedection
+# package manager detection
 if ! command -v git &> /dev/null; then
     if command -v pacman &> /dev/null; then
         sudo pacman -S --needed git
@@ -30,18 +30,21 @@ fi
 # Clone repo
 REPO_URL="https://github.com/mehedirm6244/Miserable_Xfce.git"
 REPO_DIR="Miserable_Xfce"
+TMP_DIR="/tmp"
 
-# Remove existing directory
-[ -d "$REPO_DIR" ] && rm -rf "$REPO_DIR"
+# Remove existing directory in /tmp only (don't touch arbitrary cwd)
+if [ -d "$TMP_DIR/$REPO_DIR" ]; then
+    rm -rf "$TMP_DIR/$REPO_DIR"
+fi
 
 # Clone and run installer
-cd /tmp
+cd "$TMP_DIR"
 git clone "$REPO_URL"
-cd "$REPO_DIR"
+cd "$TMP_DIR/$REPO_DIR"
 chmod +x scripts/installer.sh
-cd scripts
+cd "$TMP_DIR/$REPO_DIR/scripts"
 ./installer.sh
 echo "install script ended !"
-rm -rf /tmp/"$REPO_DIR"
+rm -rf "$TMP_DIR/$REPO_DIR"
 cd ~/
 echo "Bye!"
