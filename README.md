@@ -1,6 +1,6 @@
 # Miserable Xfce - Serenade
 
-![xfce](https://github.com/mehedirm6244/Miserable_Xfce/blob/Serenade/data/slide.gif)
+![xfce](https://github.com/mehedirm6244/Miserable_Xfce/blob/Serenade/docs/assets/slide.gif)
 
 A animated Xfce desktop environment with transitions and aesthetics. Everything you need to build this exact setup is here.
 
@@ -14,11 +14,22 @@ A animated Xfce desktop environment with transitions and aesthetics. Everything 
 
 ## Installation
 
-Get the base setup running in one go:
+Clones the repo and runs the interactive installer in one go:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/mehedirm6244/Miserable_Xfce/refs/heads/Serenade/scripts/clone.sh)
+bash <(curl -s https://raw.githubusercontent.com/mehedirm6244/Miserable_Xfce/refs/heads/Serenade/init.sh)
 ```
+
+The installer detects your distro (Arch / Debian / Fedora / openSUSE), installs Xfce itself
+plus every dependency it needs - display manager included - imports the panel layout, builds
+picom, and deploys the dotfiles. It is safe to re-run: already-installed packages and
+identical files are left alone.
+
+Useful flags (also on a local checkout via `./init.sh --no-color`):
+
+- `--no-color` - plain stdout logs instead of the TUI (for ssh/CI/cron)
+- `--settings-only` - only deploy dotfiles + xfce settings, no packages
+- `--demo` - dry-run preview, changes nothing
 
 ## Arch only
 
