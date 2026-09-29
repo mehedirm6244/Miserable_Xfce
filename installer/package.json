@@ -1,0 +1,19 @@
+{
+  "name": "miserable-xfce-installer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OpenTUI installer for the Miserable_Xfce rice",
+  "scripts": {
+    "start": "bun installer.ts",
+    "settings": "bun installer.ts --settings-only"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.5.12"
+  }
+}
